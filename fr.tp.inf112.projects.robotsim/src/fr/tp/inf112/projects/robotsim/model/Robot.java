@@ -124,13 +124,20 @@ public class Robot extends Component {
 	}
 	
 	private int moveToNextPathPosition() {
-		final Motion motion = computeMotion();
+		final Motion motion;
+	    int displacement;
+
+	    synchronized (getFactory()) {
+	        motion = computeMotion();
+	        displacement = motion == null ? 0 : motion.moveToTarget();
+	    }
 		
-		int displacement = motion == null ? 0 : motion.moveToTarget();
+//		final Motion motion = computeMotion();
+//		
+//		int displacement = motion == null ? 0 : motion.moveToTarget();
 		
 		if (displacement != 0) { 
 			notifyObservers();
-			notify();
 		} 
 		else if (isLivelyLocked()) {
 			final Position freeNeighbouringPosition = findFreeNeighbouringPosition();
@@ -226,7 +233,7 @@ public class Robot extends Component {
 			attemptNewPosition = new Position(currentPosition.getxCoordinate(), currentPosition.getyCoordinate() + resolution);
 		}
 		
-		final PositionedShape shape = new RectangularShape(attemptNewPosition.getxCoordinate(),
+		PositionedShape shape = new RectangularShape(attemptNewPosition.getxCoordinate(),
 														   attemptNewPosition.getyCoordinate(),
 														   2,
 														   2);
@@ -241,10 +248,15 @@ public class Robot extends Component {
 			attemptNewPosition = new Position(currentPosition.getxCoordinate(), currentPosition.getyCoordinate() - resolution);
 		}
 		
+		shape = new RectangularShape(attemptNewPosition.getxCoordinate(),
+				   attemptNewPosition.getyCoordinate(),
+				   2,
+				   2);
+		
 		if (!getFactory().hasMobileComponentAt(shape, this)) {
 			return attemptNewPosition;
 		}
 		
-		return attemptNewPosition;
+		return null;
 	}
 }

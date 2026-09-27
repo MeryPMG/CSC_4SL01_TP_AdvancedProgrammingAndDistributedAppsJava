@@ -160,7 +160,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return false;
 	}
 	
-	public synchronized boolean hasMobileComponentAt(final PositionedShape shape,
+	public boolean hasMobileComponentAt(final PositionedShape shape,
 										final Component movingComponent) {
 		for (final Component component : getComponents()) {
 			if (component != movingComponent && component.isMobile() && component.overlays(shape)) {
