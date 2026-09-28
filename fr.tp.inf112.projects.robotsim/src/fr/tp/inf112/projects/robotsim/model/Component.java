@@ -143,7 +143,7 @@ public abstract class Component implements Figure, Serializable, Runnable {
 			behave();
 			
 			try {
-				Thread.sleep(50);
+				Thread.sleep(100);
 			}
 			catch (InterruptedException ex) {
 				System.err.println("Symulation was abruptly interrupted");
