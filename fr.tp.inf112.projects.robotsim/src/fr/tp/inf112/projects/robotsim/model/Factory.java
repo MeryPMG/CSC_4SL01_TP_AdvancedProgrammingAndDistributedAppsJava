@@ -25,6 +25,8 @@ public class Factory extends Component implements Canvas, Observable {
 	private transient boolean simulationStarted;
 	
 	private int pathResolution;
+	
+	private LockedPosition[][] positions;
 
 	public Factory(final int width,
 				   final int height,
@@ -36,6 +38,13 @@ public class Factory extends Component implements Canvas, Observable {
 		components = new ArrayList<>();
 		observers = null;
 		simulationStarted = false;
+		
+		positions = new LockedPosition[height/pathResolution][width/pathResolution];
+		for (int i = 0; i < positions.length; i++) { // i is number of rows (corresponds to yCoordinate)
+		    for (int j = 0; j < positions[i].length; j++) { // j is number of columns (corresponds to xCoordinate)
+		        positions[i][j] = new LockedPosition(j * pathResolution, i * pathResolution);
+		    }
+		}
 	}
 	
 	protected List<Observer> getObservers() {
@@ -85,6 +94,10 @@ public class Factory extends Component implements Canvas, Observable {
 	protected List<Component> getComponents() {
 		return components;
 	}
+	
+	protected LockedPosition[][] getPositions() {
+		return positions;
+	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
@@ -98,6 +111,28 @@ public class Factory extends Component implements Canvas, Observable {
 
 	public void setPathResolution(int pathResolution) {
 		this.pathResolution = pathResolution;
+	}
+
+	public void getLockAtPosition(int xCoordinate, 
+								  int yCoordinate) {
+		final int column = xCoordinate / pathResolution;
+	    final int row = yCoordinate / pathResolution;
+	    
+	    getPositions()[row][column].lock();
+	}
+	
+	public boolean tryGetLockAtPosition(int xCoordinate, int yCoordinate) {
+		final int column = xCoordinate / pathResolution;
+	    final int row = yCoordinate / pathResolution;
+
+	    return getPositions()[row][column].tryLock();
+	}
+	
+	public void unlock(int xCoordinate, int yCoordinate) {
+		final int column = xCoordinate / pathResolution;
+	    final int row = yCoordinate / pathResolution;
+	    
+	    getPositions()[row][column].unlock();
 	}
 
 	@Override

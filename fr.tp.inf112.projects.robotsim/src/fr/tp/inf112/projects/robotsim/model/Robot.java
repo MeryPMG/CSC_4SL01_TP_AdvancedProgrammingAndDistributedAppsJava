@@ -99,6 +99,10 @@ public class Robot extends Component {
 	public boolean isMobile() {
 		return true;
 	}
+	
+	public boolean isBlocked() {
+		return blocked;
+	}
 
 	@Override
 	public boolean behave() {
@@ -124,19 +128,15 @@ public class Robot extends Component {
 	}
 	
 	private int moveToNextPathPosition() {
-		final Motion motion;
-	    int displacement;
-
-	    synchronized (getFactory()) {
-	        motion = computeMotion();
-	        displacement = motion == null ? 0 : motion.moveToTarget();
-	    }
+		final int previousX = getxCoordinate();
+	    final int previousY = getyCoordinate();
 		
-//		final Motion motion = computeMotion();
-//		
-//		int displacement = motion == null ? 0 : motion.moveToTarget();
+		final Motion motion = computeMotion();
 		
-		if (displacement != 0) { 
+		int displacement = motion == null ? 0 : motion.moveToTarget();
+		
+		if (displacement != 0) {
+			getFactory().unlock(previousX, previousY);
 			notifyObservers();
 		} 
 		else if (isLivelyLocked()) {
@@ -158,7 +158,7 @@ public class Robot extends Component {
 	}
 	
 	private Motion computeMotion() {
-		if (!currentPathPositionsIter.hasNext()) {
+		if (!currentPathPositionsIter.hasNext() && blockedTargetPosition == null) {
 
 			// There is no free path to the target
 			setBlocked(true);
@@ -168,21 +168,26 @@ public class Robot extends Component {
 		
 		
 		final Position targetPosition = getTargetPosition();
-		final PositionedShape shape = new RectangularShape(targetPosition.getxCoordinate(),
-														   targetPosition.getyCoordinate(),
-				   										   2,
-				   										   2);
 		
 		// If there is another robot, memorize the blocked target position for the next run
-		if (getFactory().hasMobileComponentAt(shape, this)) {
+		if (!getFactory().tryGetLockAtPosition(targetPosition.getxCoordinate(), targetPosition.getyCoordinate())) {
 			this.blockedTargetPosition = targetPosition;
 			
+			// See if that other robot is permanently blocked and will not move from the target position
+			final Component otherComponent = getFactory().getMobileComponentAt(targetPosition, this);
+
+			if (otherComponent instanceof Robot) {
+				final Robot otherRobot = (Robot) otherComponent;
+
+				if (otherRobot.isBlocked()) {
+					setBlocked(true);
+				}
+			}
 			return null;
 		}
-
+		
 		// Reset the memorized position
 		this.blockedTargetPosition = null;
-			
 		return new Motion(getPosition(), targetPosition);
 	}
 	
@@ -242,6 +247,7 @@ public class Robot extends Component {
 			return attemptNewPosition;
 		}
 		
+		
 		if (this.blockedTargetPosition.getxCoordinate() == currentPosition.getxCoordinate()) {
 			attemptNewPosition = new Position(currentPosition.getxCoordinate() - resolution, currentPosition.getyCoordinate());
 		} else if (this.blockedTargetPosition.getyCoordinate() == currentPosition.getyCoordinate()) {
@@ -258,5 +264,30 @@ public class Robot extends Component {
 		}
 		
 		return null;
+	}
+	
+	@Override
+	public void run() {
+		Position initialPosition = getPosition();
+
+		if(!getFactory().tryGetLockAtPosition(initialPosition.getxCoordinate(), initialPosition.getyCoordinate())) {
+			System.err.println("Error: the starting position of two robots is the same");
+		} else {
+			try {
+				while(isSimulationStarted()) {
+					behave();
+					
+					try {
+						Thread.sleep(100);
+					}
+					catch (InterruptedException ex) {
+						System.err.println("Symulation was abruptly interrupted");
+					}
+				}
+			} finally {
+				Position currentPosition = getPosition();
+				getFactory().unlock(currentPosition.getxCoordinate(), currentPosition.getyCoordinate());
+			}
+		}
 	}
 }
