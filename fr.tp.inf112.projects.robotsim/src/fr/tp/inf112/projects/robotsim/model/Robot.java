@@ -3,6 +3,8 @@ package fr.tp.inf112.projects.robotsim.model;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.canvas.model.impl.RGBColor;
@@ -14,12 +16,16 @@ import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
 public class Robot extends Component {
 	
+	private static final Logger LOGGER = Logger.getLogger(Robot.class.getName());
+	
 	private static final long serialVersionUID = -1218857231970296747L;
 
 	private static final Style STYLE = new ComponentStyle(RGBColor.GREEN, RGBColor.BLACK, 3.0f, null);
 
 	private static final Style BLOCKED_STYLE = new ComponentStyle(RGBColor.RED, RGBColor.BLACK, 3.0f, new float[]{4.0f});
 
+	private static final Style TEMP_BLOCKED_STYLE = new ComponentStyle(RGBColor.ORANGE, RGBColor.BLACK, 3.0f, new float[]{4.0f});
+	
 	private final Battery battery;
 	
 	private int speed;
@@ -33,6 +39,8 @@ public class Robot extends Component {
 	private transient Iterator<Position> currentPathPositionsIter;
 	
 	private transient boolean blocked;
+	
+	private transient boolean temporarilyBlocked;
 	
 	private Position blockedTargetPosition;
 	
@@ -54,11 +62,17 @@ public class Robot extends Component {
 		currentPathPositionsIter = null;
 		speed = 5;
 		setBlocked(false); // notify as soon something is changed
+		setTemporarilyBlocked(false);
 		blockedTargetPosition = null;
 	}
 	
 	private void setBlocked(boolean blocked) {
 		this.blocked = blocked;
+		notifyObservers();
+	}
+	
+	private void setTemporarilyBlocked(boolean temporarilyBlocked) {
+		this.temporarilyBlocked = temporarilyBlocked;
 		notifyObservers();
 	}
 
@@ -162,6 +176,7 @@ public class Robot extends Component {
 
 			// There is no free path to the target
 			setBlocked(true);
+			setTemporarilyBlocked(false);
 			
 			return null;
 		}
@@ -173,6 +188,8 @@ public class Robot extends Component {
 		if (!getFactory().tryGetLockAtPosition(targetPosition.getxCoordinate(), targetPosition.getyCoordinate())) {
 			this.blockedTargetPosition = targetPosition;
 			
+			setTemporarilyBlocked(true);
+			
 			// See if that other robot is permanently blocked and will not move from the target position
 			final Component otherComponent = getFactory().getMobileComponentAt(targetPosition, this);
 
@@ -181,6 +198,7 @@ public class Robot extends Component {
 
 				if (otherRobot.isBlocked()) {
 					setBlocked(true);
+					setTemporarilyBlocked(false);
 				}
 			}
 			return null;
@@ -188,6 +206,7 @@ public class Robot extends Component {
 		
 		// Reset the memorized position
 		this.blockedTargetPosition = null;
+		setTemporarilyBlocked(false);
 		return new Motion(getPosition(), targetPosition);
 	}
 	
@@ -209,7 +228,13 @@ public class Robot extends Component {
 	
 	@Override
 	public Style getStyle() {
-		return blocked ? BLOCKED_STYLE : STYLE;
+		if (blocked) {
+			return BLOCKED_STYLE;
+		} else if (temporarilyBlocked) {
+			return TEMP_BLOCKED_STYLE;
+		} else {
+			return STYLE;
+		}
 	}
 	
 	public boolean isLivelyLocked() { 
@@ -271,7 +296,7 @@ public class Robot extends Component {
 		Position initialPosition = getPosition();
 
 		if(!getFactory().tryGetLockAtPosition(initialPosition.getxCoordinate(), initialPosition.getyCoordinate())) {
-			System.err.println("Error: the starting position of two robots is the same");
+			LOGGER.log(Level.SEVERE, "The starting position of two robots is the same");
 		} else {
 			try {
 				while(isSimulationStarted()) {
@@ -281,7 +306,7 @@ public class Robot extends Component {
 						Thread.sleep(100);
 					}
 					catch (InterruptedException ex) {
-						System.err.println("Symulation was abruptly interrupted");
+						LOGGER.log(Level.WARNING, "Simulation was abruptly interrupted", ex);
 					}
 				}
 			} finally {
