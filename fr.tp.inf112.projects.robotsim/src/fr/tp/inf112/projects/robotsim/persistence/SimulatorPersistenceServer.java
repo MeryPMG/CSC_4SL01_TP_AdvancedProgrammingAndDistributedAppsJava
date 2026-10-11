@@ -1,4 +1,4 @@
-package fr.tp.inf112.projects.robotsim.model;
+package fr.tp.inf112.projects.robotsim.persistence;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -6,8 +6,8 @@ import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class HelloWorldServer {
-	private static final Logger LOGGER = Logger.getLogger(HelloWorldServer.class.getName());
+public class SimulatorPersistenceServer {
+	private static final Logger LOGGER = Logger.getLogger(SimulatorPersistenceServer.class.getName());
 	
 	private static final int SERVER_PORT = 55000;
 	
