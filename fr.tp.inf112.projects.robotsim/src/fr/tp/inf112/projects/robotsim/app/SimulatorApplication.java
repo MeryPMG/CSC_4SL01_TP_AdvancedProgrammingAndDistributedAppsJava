@@ -25,6 +25,8 @@ import fr.tp.inf112.projects.robotsim.model.shapes.BasicPolygonShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.CircularShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 import fr.tp.inf112.projects.robotsim.persistence.FactoryPersistenceManager;
+import fr.tp.inf112.projects.robotsim.persistence.RemoteFactoryPersistenceManager;
+import fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser;
 
 public class SimulatorApplication {
 	private static final Logger LOGGER = Logger.getLogger(SimulatorApplication.class.getName());
@@ -84,8 +86,8 @@ public class SimulatorApplication {
 			  
 			@Override
 	        public void run() {
-				final FileCanvasChooser canvasChooser = new FileCanvasChooser("factory", "Puck Factory");
-				final Component factoryViewer = new CanvasViewer(new SimulatorController(factory, new FactoryPersistenceManager(canvasChooser)));
+				final RemoteFileCanvasChooser canvasChooser = new RemoteFileCanvasChooser("factory", "Puck Factory");
+				final Component factoryViewer = new CanvasViewer(new SimulatorController(factory, new RemoteFactoryPersistenceManager(canvasChooser)));
 				canvasChooser.setViewer(factoryViewer);
 				//new CanvasViewer(factory);
 			}

@@ -12,6 +12,7 @@ public class SimulatorPersistenceServer {
 	private static final int SERVER_PORT = 55000;
 	
 	public static void main(String[] args) {
+		LOGGER.config("Server working directory: " + System.getProperty("user.dir"));
 		try (ServerSocket serverSocket = new ServerSocket(SERVER_PORT)) {
 			do {
 				Socket socket = serverSocket.accept();
