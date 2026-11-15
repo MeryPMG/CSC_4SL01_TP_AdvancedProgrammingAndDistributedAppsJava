@@ -8,7 +8,6 @@ import javax.swing.SwingUtilities;
 
 import fr.tp.inf112.projects.canvas.model.impl.BasicPoint;
 import fr.tp.inf112.projects.canvas.view.CanvasViewer;
-import fr.tp.inf112.projects.canvas.view.FileCanvasChooser;
 import fr.tp.inf112.projects.robotsim.model.Area;
 import fr.tp.inf112.projects.robotsim.model.Battery;
 import fr.tp.inf112.projects.robotsim.model.ChargingStation;
@@ -24,7 +23,6 @@ import fr.tp.inf112.projects.robotsim.model.path.JGraphTDijkstraFactoryPathFinde
 import fr.tp.inf112.projects.robotsim.model.shapes.BasicPolygonShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.CircularShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
-import fr.tp.inf112.projects.robotsim.persistence.FactoryPersistenceManager;
 import fr.tp.inf112.projects.robotsim.persistence.RemoteFactoryPersistenceManager;
 import fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser;
 
