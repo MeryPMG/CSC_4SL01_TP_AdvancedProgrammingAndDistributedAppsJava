@@ -32,6 +32,7 @@ public class Factory extends Component implements Canvas, Observable {
 	
 	private int pathResolution;
 	
+	@JsonIgnore
 	private LockedPosition[][] positions;
 
 	public Factory(final int width,
@@ -45,19 +46,28 @@ public class Factory extends Component implements Canvas, Observable {
 		observers = null;
 		simulationStarted = false;
 		
-		positions = new LockedPosition[height/pathResolution][width/pathResolution];
-		for (int i = 0; i < positions.length; i++) { // i is number of rows (corresponds to yCoordinate)
-		    for (int j = 0; j < positions[i].length; j++) { // j is number of columns (corresponds to xCoordinate)
-		        positions[i][j] = new LockedPosition(j * pathResolution, i * pathResolution);
-		    }
-		}
+		initializePositions();
 	}
 	
 	public Factory() {
 		this(0, 0, null, 1);
 	}
 	
-	protected List<Observer> getObservers() {
+	private void initializePositions() {
+		final RectangularShape factoryShape = (RectangularShape) getPositionedShape();
+		final int width = factoryShape.getWidth();
+		final int height = factoryShape.getHeight();
+
+		positions = new LockedPosition[height/pathResolution][width/pathResolution];
+
+		for (int i = 0; i < positions.length; i++) { // i is number of rows (corresponds to yCoordinate)
+			for (int j = 0; j < positions[i].length; j++) { // j is number of columns (corresponds to xCoordinate)
+				positions[i][j] = new LockedPosition(j * pathResolution, i * pathResolution);
+			}
+		}
+	}
+	
+	public List<Observer> getObservers() {
 		if (observers == null) {
 			observers = new ArrayList<>();
 		}
@@ -75,7 +85,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return getObservers().remove(observer);
 	}
 	
-	protected void notifyObservers() {
+	public void notifyObservers() {
 		for (final Observer observer : getObservers()) {
 			observer.modelChanged();
 		}
@@ -106,6 +116,9 @@ public class Factory extends Component implements Canvas, Observable {
 	}
 	
 	protected LockedPosition[][] getPositions() {
+		if (positions == null || positions.length == 0) {
+	        initializePositions();
+	    }
 		return positions;
 	}
 

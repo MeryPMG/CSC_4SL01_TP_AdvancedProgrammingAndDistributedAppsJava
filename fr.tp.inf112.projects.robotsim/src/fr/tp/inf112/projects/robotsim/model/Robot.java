@@ -11,7 +11,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.canvas.model.impl.RGBColor;
 import fr.tp.inf112.projects.robotsim.model.motion.Motion;
+import fr.tp.inf112.projects.robotsim.model.path.CustomDijkstraFactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.path.FactoryPathFinder;
+import fr.tp.inf112.projects.robotsim.model.path.JGraphTDijkstraFactoryPathFinder;
 import fr.tp.inf112.projects.robotsim.model.shapes.CircularShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
@@ -50,7 +52,10 @@ public class Robot extends Component {
 	
 	private Position blockedTargetPosition;
 	
+	@JsonIgnore
 	private FactoryPathFinder pathFinder;
+	
+	private String pathFinderType;
 
 	public Robot(final Factory factory,
 				 final FactoryPathFinder pathFinder,
@@ -70,6 +75,12 @@ public class Robot extends Component {
 		setBlocked(false); // notify as soon something is changed
 		setTemporarilyBlocked(false);
 		blockedTargetPosition = null;
+		
+		if (pathFinder instanceof JGraphTDijkstraFactoryPathFinder) {
+		    pathFinderType = "JGRAPH";
+		} else if (pathFinder instanceof CustomDijkstraFactoryPathFinder) {
+		    pathFinderType = "CUSTOM";
+		}
 	}
 	
 	public Robot() {
@@ -125,6 +136,17 @@ public class Robot extends Component {
 	
 	public boolean removeTargetComponent(final Component targetComponent) {
 		return getTargetComponents().remove(targetComponent);
+	}
+	
+	private FactoryPathFinder getPathFinder() {
+		if (pathFinder == null) {
+			if ("JGRAPH".equals(pathFinderType)) {
+				pathFinder = new JGraphTDijkstraFactoryPathFinder(getFactory(), getFactory().getPathResolution());
+			} else {
+				pathFinder = new CustomDijkstraFactoryPathFinder(getFactory(), getFactory().getPathResolution());
+			}
+		}
+		return pathFinder;
 	}
 	
 	@JsonIgnore
@@ -187,7 +209,7 @@ public class Robot extends Component {
 	}
 	
 	private void computePathToCurrentTargetComponent() {
-		final List<Position> currentPathPositions = pathFinder.findPath(this, currTargetComponent);
+		final List<Position> currentPathPositions = getPathFinder().findPath(this, currTargetComponent);
 		currentPathPositionsIter = currentPathPositions.iterator();
 	}
 	

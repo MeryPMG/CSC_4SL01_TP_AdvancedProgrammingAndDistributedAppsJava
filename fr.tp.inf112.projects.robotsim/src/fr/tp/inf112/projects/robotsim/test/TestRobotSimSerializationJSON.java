@@ -106,14 +106,18 @@ public class TestRobotSimSerializationJSON {
 	
 	@Test
     public void testSerialization() throws JsonProcessingException {
+		final String factoryAsJsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(myFactory);
 
-        final String factoryAsJsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(myFactory);
+		LOGGER.info(factoryAsJsonString);
 
-        LOGGER.info(factoryAsJsonString);
+		final Factory roundTrip = objectMapper.readValue(factoryAsJsonString, Factory.class);
 
-        final Factory roundTrip = objectMapper.readValue(factoryAsJsonString,
-        											     Factory.class);
-
-        LOGGER.info(roundTrip.toString());
+		LOGGER.info(roundTrip.toString());
     }
+	
+	public Factory getRoundTripFactory() throws JsonProcessingException {
+		final String factoryAsJsonString = objectMapper.writeValueAsString(myFactory);
+
+		return objectMapper.readValue(factoryAsJsonString, Factory.class);
+	}
 }

@@ -16,13 +16,13 @@ public class Room extends Component {
 	
 	private static final int WALL_THICKNESS = 5;
 	
-	private final PositionedShape leftWall;
+	private PositionedShape leftWall;
 	
-	private final PositionedShape rightWall;
+	private PositionedShape rightWall;
 	
-	private final PositionedShape topWall;
+	private PositionedShape topWall;
 	
-	private final PositionedShape bottomWall;
+	private PositionedShape bottomWall;
 	
 	private final List<Area> areas;
 
@@ -33,18 +33,36 @@ public class Room extends Component {
 				final RectangularShape shape,
 				final String name) {
 		super(factory, shape, name);
+
+		areas = new ArrayList<>();
+		doors = new ArrayList<>();
 		
+		initializeWalls();
+	}
+	
+	public Room() {
+		super();
+
+	    areas = new ArrayList<>();
+	    doors = new ArrayList<>();
+
+	    leftWall = null;
+	    rightWall = null;
+	    topWall = null;
+	    bottomWall = null;
+	}
+	
+	private void initializeWalls() {
 		leftWall = new RectangularShape(getxCoordinate(), getyCoordinate(), WALL_THICKNESS, getHeight() + WALL_THICKNESS);
 		rightWall = new RectangularShape(getxCoordinate() + getWidth(), getyCoordinate(), WALL_THICKNESS, getHeight() + WALL_THICKNESS);
 		topWall = new RectangularShape(getxCoordinate(), getyCoordinate(), getWidth(), WALL_THICKNESS);
 		bottomWall = new RectangularShape(getxCoordinate(), getyCoordinate() + getHeight(), getWidth(), WALL_THICKNESS);
-		
-		areas = new ArrayList<>();
-		doors = new ArrayList<>();
 	}
 	
-	public Room() {
-	    this(null, new RectangularShape(0, 0, 0, 0), null);
+	private void ensureWallsInitialized() {
+	    if (leftWall == null) {
+	        initializeWalls();
+	    }
 	}
 	
 	protected boolean addArea(final Area area) {
@@ -65,12 +83,14 @@ public class Room extends Component {
 
 	@Override
 	public boolean overlays(final PositionedShape shape) {
+		ensureWallsInitialized();
 		return leftWall.overlays(shape) || rightWall.overlays(shape) || 
 			   topWall.overlays(shape) || bottomWall.overlays(shape);
 	}
 
 	@Override
 	public boolean canBeOverlayed(final PositionedShape shape) {
+		ensureWallsInitialized();
 		final Door overlayedDoor = getOverlayedDoor(shape);
 		
 		if (overlayedDoor != null) {
