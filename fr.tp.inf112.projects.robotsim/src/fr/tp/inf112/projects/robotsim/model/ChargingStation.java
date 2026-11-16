@@ -22,13 +22,17 @@ public class ChargingStation extends Component {
 		
 		charging = false;
 	}
+	
+	public ChargingStation() {
+	    this((Factory) null, null, null);
+	}
 
 	@Override
 	public String toString() {
 		return super.toString() + "]";
 	}
 
-	protected boolean isCharging() {
+	public boolean isCharging() {
 		return charging;
 	}
 

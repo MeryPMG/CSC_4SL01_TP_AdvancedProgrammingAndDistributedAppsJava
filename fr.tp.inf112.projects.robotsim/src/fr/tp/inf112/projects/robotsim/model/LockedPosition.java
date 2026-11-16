@@ -14,6 +14,10 @@ public class LockedPosition extends Position implements Serializable {
 					final int yCoordinate) {
 		super(xCoordinate, yCoordinate);
 	}
+	
+	public LockedPosition() {
+	    this(0, 0);
+	}
 
 	public Lock getLock() {
 		return lock;

@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.canvas.model.impl.RGBColor;
 import fr.tp.inf112.projects.robotsim.model.motion.Motion;
@@ -32,14 +34,18 @@ public class Robot extends Component {
 	
 	private List<Component> targetComponents;
 	
+	@JsonIgnore
 	private transient Iterator<Component> targetComponentsIterator;
 	
 	private Component currTargetComponent;
 	
+	@JsonIgnore
 	private transient Iterator<Position> currentPathPositionsIter;
 	
+	@JsonIgnore
 	private transient boolean blocked;
 	
+	@JsonIgnore
 	private transient boolean temporarilyBlocked;
 	
 	private Position blockedTargetPosition;
@@ -66,6 +72,10 @@ public class Robot extends Component {
 		blockedTargetPosition = null;
 	}
 	
+	public Robot() {
+	    this(null, null, null, null, null);
+	}
+	
 	private void setBlocked(boolean blocked) {
 		this.blocked = blocked;
 		notifyObservers();
@@ -81,7 +91,7 @@ public class Robot extends Component {
 		return super.toString() + " battery=" + battery + "]";
 	}
 
-	protected int getSpeed() {
+	public int getSpeed() {
 		return speed;
 	}
 
@@ -89,11 +99,19 @@ public class Robot extends Component {
 		this.speed = speed;
 	}
 	
+	public Battery getBattery() {
+	    return battery;
+	}
+	
+	public Component getCurrTargetComponent() {
+	    return currTargetComponent;
+	}
+	
 	public Position getBlockedTargetPosition() {
 		return blockedTargetPosition;
 	}
 	
-	private List<Component> getTargetComponents() {
+	public List<Component> getTargetComponents() {
 		if (targetComponents == null) {
 			targetComponents = new ArrayList<>();
 		}
@@ -109,11 +127,13 @@ public class Robot extends Component {
 		return getTargetComponents().remove(targetComponent);
 	}
 	
+	@JsonIgnore
 	@Override
 	public boolean isMobile() {
 		return true;
 	}
 	
+	@JsonIgnore
 	public boolean isBlocked() {
 		return blocked;
 	}
@@ -226,6 +246,7 @@ public class Robot extends Component {
 		return true;
 	}
 	
+	@JsonIgnore
 	@Override
 	public Style getStyle() {
 		if (blocked) {
@@ -237,6 +258,7 @@ public class Robot extends Component {
 		}
 	}
 	
+	@JsonIgnore
 	public boolean isLivelyLocked() { 
 	    final Position blockedTargetPosition = getBlockedTargetPosition(); 
 	   

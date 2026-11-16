@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import fr.tp.inf112.projects.canvas.controller.Observable;
 import fr.tp.inf112.projects.canvas.controller.Observer;
 import fr.tp.inf112.projects.canvas.model.Canvas;
@@ -18,10 +21,13 @@ public class Factory extends Component implements Canvas, Observable {
 	
 	private static final ComponentStyle DEFAULT = new ComponentStyle(5.0f);
 
+	@JsonManagedReference("factory-components")
     private final List<Component> components;
 
+    @JsonIgnore
 	private transient List<Observer> observers;
 
+    @JsonIgnore
 	private transient boolean simulationStarted;
 	
 	private int pathResolution;
@@ -45,6 +51,10 @@ public class Factory extends Component implements Canvas, Observable {
 		        positions[i][j] = new LockedPosition(j * pathResolution, i * pathResolution);
 		    }
 		}
+	}
+	
+	public Factory() {
+		this(0, 0, null, 1);
 	}
 	
 	protected List<Observer> getObservers() {
@@ -99,6 +109,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return positions;
 	}
 
+	@JsonIgnore
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public Collection<Figure> getFigures() {
@@ -140,6 +151,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return super.toString() + " components=" + components + "]";
 	}
 	
+	@JsonIgnore
 	public boolean isSimulationStarted() {
 		return simulationStarted;
 	}
@@ -173,6 +185,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return behaved;
 	}
 	
+	@JsonIgnore
 	@Override
 	public Style getStyle() {
 		return DEFAULT;
@@ -199,6 +212,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return false;
 	}
 	
+	@JsonIgnore
 	public Component getMobileComponentAt(	final Position position,
 											final Component ignoredComponent) {
 		if (position == null) {
@@ -208,6 +222,7 @@ public class Factory extends Component implements Canvas, Observable {
 		return getMobileComponentAt(new RectangularShape(position.getxCoordinate(), position.getyCoordinate(), 2, 2), ignoredComponent);
 	}
 	
+	@JsonIgnore
 	public Component getMobileComponentAt(	final PositionedShape shape,
 											final Component ignoredComponent) {
 		if (shape == null) {

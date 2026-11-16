@@ -3,6 +3,8 @@ package fr.tp.inf112.projects.robotsim.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
@@ -24,6 +26,7 @@ public class Room extends Component {
 	
 	private final List<Area> areas;
 
+	@JsonManagedReference("room-doors")
 	private final List<Door> doors;
 
 	public Room(final Factory factory,
@@ -38,6 +41,10 @@ public class Room extends Component {
 		
 		areas = new ArrayList<>();
 		doors = new ArrayList<>();
+	}
+	
+	public Room() {
+	    this(null, new RectangularShape(0, 0, 0, 0), null);
 	}
 	
 	protected boolean addArea(final Area area) {

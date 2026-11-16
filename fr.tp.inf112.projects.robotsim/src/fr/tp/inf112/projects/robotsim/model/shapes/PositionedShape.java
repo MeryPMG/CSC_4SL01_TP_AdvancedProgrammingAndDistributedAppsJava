@@ -2,6 +2,8 @@ package fr.tp.inf112.projects.robotsim.model.shapes;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import fr.tp.inf112.projects.canvas.model.Shape;
 import fr.tp.inf112.projects.robotsim.model.Position;
 
@@ -34,6 +36,10 @@ public abstract class PositionedShape implements Shape, Serializable {
 							  final int yCoordinate) {
 		this.position = new Position(xCoordinate, yCoordinate);
 	}
+	
+	protected PositionedShape() {
+	    this(0, 0);
+	}
 
 	public abstract int getWidth();
 
@@ -43,6 +49,7 @@ public abstract class PositionedShape implements Shape, Serializable {
 		return getOverlayedSurface(shape) > 0.0f;
 	}
 	
+	@JsonIgnore
 	public float getOverlayedSurface(final PositionedShape shape) {
 		return xIntersectionLength(shape) * yIntersectionLength(shape);
 	}
@@ -59,6 +66,7 @@ public abstract class PositionedShape implements Shape, Serializable {
 		return position;
 	}
 
+	@JsonIgnore
 	public int getxCoordinate() {
 		return getPosition().getxCoordinate();
 	}
@@ -67,6 +75,7 @@ public abstract class PositionedShape implements Shape, Serializable {
 		return getPosition().setxCoordinate(xCoordinate);
 	}
 	
+	@JsonIgnore
 	public int getyCoordinate() {
 		return getPosition().getyCoordinate();
 	}
