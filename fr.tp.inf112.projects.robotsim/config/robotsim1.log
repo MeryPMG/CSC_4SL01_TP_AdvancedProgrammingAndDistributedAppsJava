@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2026-11-16T20:18:11.013355600Z</date>
-  <millis>1794860291013</millis>
-  <nanos>355600</nanos>
+  <date>2026-11-16T23:37:48.104980300Z</date>
+  <millis>1794872268104</millis>
+  <nanos>980300</nanos>
   <sequence>0</sequence>
   <logger>fr.tp.inf112.projects.robotsim.app.SimulatorApplication</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Starting the robot simulator...</message>
 </record>
 <record>
-  <date>2026-11-16T20:18:11.049872300Z</date>
-  <millis>1794860291049</millis>
-  <nanos>872300</nanos>
+  <date>2026-11-16T23:37:48.137418700Z</date>
+  <millis>1794872268137</millis>
+  <nanos>418700</nanos>
   <sequence>1</sequence>
   <logger>fr.tp.inf112.projects.robotsim.app.SimulatorApplication</logger>
   <level>CONFIG</level>
@@ -24,5 +24,41 @@
   <method>main</method>
   <thread>3</thread>
   <message>With parameters [].</message>
+</record>
+<record>
+  <date>2026-11-16T23:37:50.393935800Z</date>
+  <millis>1794872270393</millis>
+  <nanos>935800</nanos>
+  <sequence>2</sequence>
+  <logger>fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser</logger>
+  <level>CONFIG</level>
+  <class>fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser</class>
+  <method>getRemoteFileNames</method>
+  <thread>60</thread>
+  <message>Received existing model file names from the persistence server</message>
+</record>
+<record>
+  <date>2026-11-16T23:37:55.004545600Z</date>
+  <millis>1794872275004</millis>
+  <nanos>545600</nanos>
+  <sequence>3</sequence>
+  <logger>fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser</logger>
+  <level>CONFIG</level>
+  <class>fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser</class>
+  <method>getRemoteFileNames</method>
+  <thread>62</thread>
+  <message>Received existing model file names from the persistence server</message>
+</record>
+<record>
+  <date>2026-11-16T23:38:13.791941700Z</date>
+  <millis>1794872293791</millis>
+  <nanos>941700</nanos>
+  <sequence>4</sequence>
+  <logger>fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser</logger>
+  <level>CONFIG</level>
+  <class>fr.tp.inf112.projects.robotsim.persistence.RemoteFileCanvasChooser</class>
+  <method>getRemoteFileNames</method>
+  <thread>79</thread>
+  <message>Received existing model file names from the persistence server</message>
 </record>
 </log>

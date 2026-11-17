@@ -138,6 +138,14 @@ public class Robot extends Component {
 		return getTargetComponents().remove(targetComponent);
 	}
 	
+	public String getPathFinderType() {
+	    return pathFinderType;
+	}
+
+	public void setPathFinderType(String pathFinderType) {
+	    this.pathFinderType = pathFinderType;
+	}
+	
 	private FactoryPathFinder getPathFinder() {
 		if (pathFinder == null) {
 			if ("JGRAPH".equals(pathFinderType)) {
@@ -166,6 +174,8 @@ public class Robot extends Component {
 			return false;
 		}
 		
+		restoreRuntimeState();
+		
 		if (currTargetComponent == null || hasReachedCurrentTarget()) {
 			currTargetComponent = nextTargetComponentToVisit();
 			
@@ -173,6 +183,26 @@ public class Robot extends Component {
 		}
 
 		return moveToNextPathPosition() != 0;
+	}
+	
+	private void restoreRuntimeState() {
+		if (targetComponentsIterator == null) {
+			targetComponentsIterator = getTargetComponents().iterator();
+
+			if (currTargetComponent != null) {
+				while (targetComponentsIterator.hasNext()) {
+					Component component = targetComponentsIterator.next();
+
+					if (component == currTargetComponent) {
+						break;
+					}
+				}
+			}
+		}
+
+		if (currentPathPositionsIter == null && currTargetComponent != null && !hasReachedCurrentTarget()) {
+			computePathToCurrentTargetComponent();
+		}
 	}
 		
 	private Component nextTargetComponentToVisit() {

@@ -47,6 +47,8 @@ public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceMa
 			try {
 				Canvas receivedCanvas = (Canvas) objInStream.readObject();
 				
+				receivedCanvas.setId(canvasId);
+				
 				LOGGER.info("Received response from the remote server");
 				
 				return receivedCanvas;

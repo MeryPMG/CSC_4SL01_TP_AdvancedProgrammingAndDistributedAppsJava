@@ -51,7 +51,7 @@ public class TestRobotSimSerializationJSON {
     	
     	objectMapper.activateDefaultTyping(typeValidator,
     	        						   ObjectMapper.DefaultTyping.NON_FINAL);
-    	 myFactory = createFactory();
+    	myFactory = createFactory();
 	}
 	
 	private Factory createFactory() {
