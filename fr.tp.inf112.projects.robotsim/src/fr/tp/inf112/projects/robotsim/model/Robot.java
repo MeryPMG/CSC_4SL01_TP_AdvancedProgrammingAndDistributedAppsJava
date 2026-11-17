@@ -167,6 +167,12 @@ public class Robot extends Component {
 	public boolean isBlocked() {
 		return blocked;
 	}
+	
+	@JsonIgnore
+	public boolean isTemporarilyBlocked() {
+		return temporarilyBlocked;
+	}
+
 
 	@Override
 	public boolean behave() {
@@ -201,7 +207,9 @@ public class Robot extends Component {
 		}
 
 		if (currentPathPositionsIter == null && currTargetComponent != null && !hasReachedCurrentTarget()) {
+			LOGGER.info(getName() + " START path with " + getPathFinder().getClass().getSimpleName());
 			computePathToCurrentTargetComponent();
+			LOGGER.info(getName() + " FINISH path with " + getPathFinder().getClass().getSimpleName());
 		}
 	}
 		
@@ -250,17 +258,21 @@ public class Robot extends Component {
 			setBlocked(true);
 			setTemporarilyBlocked(false);
 			
+			LOGGER.info(getName() + " PERMANENTLY BLOCKED");
+			
 			return null;
 		}
 		
 		
 		final Position targetPosition = getTargetPosition();
-		
+	
 		// If there is another robot, memorize the blocked target position for the next run
 		if (!getFactory().tryGetLockAtPosition(targetPosition.getxCoordinate(), targetPosition.getyCoordinate())) {
 			this.blockedTargetPosition = targetPosition;
 			
 			setTemporarilyBlocked(true);
+			
+			LOGGER.info(getName() + " TEMPORARILY BLOCKED");
 			
 			// See if that other robot is permanently blocked and will not move from the target position
 			final Component otherComponent = getFactory().getMobileComponentAt(targetPosition, this);
@@ -368,7 +380,7 @@ public class Robot extends Component {
 	@Override
 	public void run() {
 		Position initialPosition = getPosition();
-
+		
 		if(!getFactory().tryGetLockAtPosition(initialPosition.getxCoordinate(), initialPosition.getyCoordinate())) {
 			LOGGER.log(Level.SEVERE, "The starting position of two robots is the same");
 		} else {
