@@ -79,4 +79,20 @@ public class RemoteFileCanvasChooser extends FileCanvasChooser {
 			}
 		}
 	}
+	
+	public String chooseSaveId(final String currentId) throws IOException {
+		final int option = JOptionPane.showConfirmDialog(getViewer(),
+				"The factory is currently saved as '" + currentId + "'. Do you want to save it with a different name?",
+				"Save Factory", JOptionPane.YES_NO_CANCEL_OPTION);
+
+		if (option == JOptionPane.CANCEL_OPTION || option == JOptionPane.CLOSED_OPTION) {
+			return null;
+		}
+
+		if (option == JOptionPane.YES_OPTION) {
+			return newCanvasId();
+		}
+
+		return currentId;
+	}
 }

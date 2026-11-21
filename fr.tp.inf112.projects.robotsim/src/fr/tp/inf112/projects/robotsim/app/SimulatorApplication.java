@@ -1,7 +1,9 @@
 package fr.tp.inf112.projects.robotsim.app;
 
 import java.awt.Component;
+import java.io.IOException;
 import java.util.Arrays;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.swing.SwingUtilities;
@@ -86,13 +88,23 @@ public class SimulatorApplication {
 //		robot2.addTargetComponent(conveyor1);
 		
 		final Factory factory = new TestRobotSimSerializationJSON().getRoundTripFactory();
+		factory.setId("startup.factory");
 		
 		SwingUtilities.invokeLater(new Runnable() {
 			  
 			@Override
 	        public void run() {
 				final RemoteFileCanvasChooser canvasChooser = new RemoteFileCanvasChooser("factory", "Puck Factory");
-				final Component factoryViewer = new CanvasViewer(new RemoteSimulatorController(factory, new RemoteFactoryPersistenceManager(canvasChooser)));
+				final RemoteFactoryPersistenceManager persistenceManager = new RemoteFactoryPersistenceManager(canvasChooser);
+				
+				try {
+				    persistenceManager.persistInitial(factory);
+				} catch (IOException ex) {
+				    LOGGER.log(Level.SEVERE, "Could not persist initial factory", ex);
+				}
+				
+//				final Component factoryViewer = new CanvasViewer(new RemoteSimulatorController(factory, new RemoteFactoryPersistenceManager(canvasChooser)));
+				final Component factoryViewer = new CanvasViewer(new RemoteSimulatorController(factory, persistenceManager));
 				canvasChooser.setViewer(factoryViewer);
 				//new CanvasViewer(factory);
 			}

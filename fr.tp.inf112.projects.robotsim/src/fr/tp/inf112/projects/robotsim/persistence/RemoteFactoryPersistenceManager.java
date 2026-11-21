@@ -59,9 +59,9 @@ public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceMa
 		}
 	}
 
-	@Override
+	
 	// Connects to the server and sends the object to be persisted
-	public void persist(Canvas canvasModel) throws IOException {
+	private void persistWithoutChoosingName(Canvas canvasModel) throws IOException {
 		InetAddress serverNetAddr = InetAddress.getByName("localhost");
 		try (
 			Socket socket = new Socket(serverNetAddr, SERVER_PORT);
@@ -77,6 +77,29 @@ public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceMa
 		}
 	}
 
+	@Override
+	public void persist(final Canvas canvasModel) throws IOException {
+		final CanvasChooser chooser = getCanvasChooser();
+
+		if (chooser instanceof RemoteFileCanvasChooser) {
+			final RemoteFileCanvasChooser remoteChooser = (RemoteFileCanvasChooser) chooser;
+
+			final String chosenId = remoteChooser.chooseSaveId(canvasModel.getId());
+
+			if (chosenId == null) {
+				return;
+			}
+
+			canvasModel.setId(chosenId);
+		}
+
+		persistWithoutChoosingName(canvasModel);
+	}
+	
+	public void persistInitial(final Canvas canvasModel) throws IOException {
+		persistWithoutChoosingName(canvasModel);
+	}
+	
 	@Override
 	public boolean delete(Canvas canvasModel) throws IOException {
 		return false;
