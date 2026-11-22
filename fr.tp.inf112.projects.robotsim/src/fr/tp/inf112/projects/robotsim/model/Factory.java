@@ -27,7 +27,6 @@ public class Factory extends Component implements Canvas, Observable {
     @JsonIgnore
 	private transient List<Observer> observers;
 
-    @JsonIgnore
 	private transient boolean simulationStarted;
 	
 	private int pathResolution;
@@ -166,9 +165,15 @@ public class Factory extends Component implements Canvas, Observable {
 		return super.toString() + " components=" + components + "]";
 	}
 	
-	@JsonIgnore
+	@JsonIgnore(false)
+	@Override
 	public boolean isSimulationStarted() {
 		return simulationStarted;
+	}
+	
+	@JsonIgnore(false)
+	public void setSimulationStarted(final boolean simulationStarted) {
+	    this.simulationStarted = simulationStarted;
 	}
 
 	public void startSimulation() {

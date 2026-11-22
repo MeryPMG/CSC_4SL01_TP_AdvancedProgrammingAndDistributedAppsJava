@@ -48,7 +48,7 @@ public class SimulatorController {
     @GetMapping("/{factoryId}")
     public Factory getFactory(@PathVariable String factoryId) {
         LOGGER.info("Retrieving factory " + factoryId);
-
+        
         return findFactory(factoryId);
     }
     

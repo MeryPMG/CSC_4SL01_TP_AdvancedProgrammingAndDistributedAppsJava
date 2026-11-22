@@ -32,8 +32,6 @@ public class RemoteSimulatorController extends SimulatorController {
 	
     private final ObjectMapper objectMapper;
     
-    private volatile boolean simulationRunning;
-    
     public RemoteSimulatorController(final Factory factoryModel,
             						 final CanvasPersistenceManager persistenceManager) {
         super(factoryModel, persistenceManager);
@@ -71,7 +69,7 @@ public class RemoteSimulatorController extends SimulatorController {
 		final URI uri = getSimulationUri();
 		final HttpRequest request = HttpRequest.newBuilder().uri(uri).GET().build();
 		final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-
+		
 		return objectMapper.readValue(response.body(), Factory.class);
 	}
 	
@@ -86,8 +84,6 @@ public class RemoteSimulatorController extends SimulatorController {
 			LOGGER.info("Simulation start request returned: " + response.body());
 
 			if (Boolean.parseBoolean(response.body())) {
-				simulationRunning = true;
-				
 				final Thread refreshFactoryThread = new Thread(() -> {
 					try {
 						updateViewer();
@@ -103,10 +99,14 @@ public class RemoteSimulatorController extends SimulatorController {
 	}
 	
 	private void updateViewer() throws InterruptedException, URISyntaxException, IOException {
-		while (simulationRunning) {
-			final Factory remoteFactoryModel = getFactory();
-			setCanvas(remoteFactoryModel);
+		Factory remoteFactoryModel = getFactory();
+	    setCanvas(remoteFactoryModel);
+	    
+		while (((Factory) getCanvas()).isSimulationStarted()) {
 			Thread.sleep(100);
+			
+			remoteFactoryModel = getFactory();
+			setCanvas(remoteFactoryModel);
 		}
 	}
 	
@@ -135,17 +135,8 @@ public class RemoteSimulatorController extends SimulatorController {
 			final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
 			LOGGER.info("Simulation stop request returned: " + response.body());
-
-			if (Boolean.parseBoolean(response.body())) {
-				simulationRunning = false;
-			}
 		} catch (IOException | InterruptedException | URISyntaxException ex) {
 			LOGGER.log(Level.SEVERE, "Could not stop remote simulation", ex);
 		}
 	}
-
-	@Override
-    public boolean isAnimationRunning() {
-        return simulationRunning;
-    }
 }
