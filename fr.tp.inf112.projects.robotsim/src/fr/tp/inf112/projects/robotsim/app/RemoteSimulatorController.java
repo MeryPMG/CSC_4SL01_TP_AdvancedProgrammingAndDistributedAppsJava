@@ -70,6 +70,10 @@ public class RemoteSimulatorController extends SimulatorController {
 		final HttpRequest request = HttpRequest.newBuilder().uri(uri).GET().build();
 		final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 		
+		if (response.body() == null || response.body().isBlank()) {
+	        return null;
+	    }
+		
 		return objectMapper.readValue(response.body(), Factory.class);
 	}
 	
@@ -100,12 +104,20 @@ public class RemoteSimulatorController extends SimulatorController {
 	
 	private void updateViewer() throws InterruptedException, URISyntaxException, IOException {
 		Factory remoteFactoryModel = getFactory();
+
+	    if (remoteFactoryModel == null) {
+	        return;
+	    }
+	    
 	    setCanvas(remoteFactoryModel);
 	    
 		while (((Factory) getCanvas()).isSimulationStarted()) {
 			Thread.sleep(100);
 			
 			remoteFactoryModel = getFactory();
+			if (remoteFactoryModel == null) {
+	            break;
+	        }
 			setCanvas(remoteFactoryModel);
 		}
 	}
