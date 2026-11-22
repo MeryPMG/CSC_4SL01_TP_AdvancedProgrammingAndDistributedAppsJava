@@ -24,8 +24,11 @@ public class Factory extends Component implements Canvas, Observable {
 	@JsonManagedReference("factory-components")
     private final List<Component> components;
 
+//    @JsonIgnore
+//	private transient List<Observer> observers;
+    
     @JsonIgnore
-	private transient List<Observer> observers;
+    private transient FactoryModelChangedNotifier notifier;
 
 	private transient boolean simulationStarted;
 	
@@ -42,7 +45,8 @@ public class Factory extends Component implements Canvas, Observable {
 		
 		this.pathResolution = pathResolution;
 		components = new ArrayList<>();
-		observers = null;
+//		observers = null;
+		notifier = new LocalFactoryModelChangedNotifier();
 		simulationStarted = false;
 		
 		initializePositions();
@@ -68,28 +72,44 @@ public class Factory extends Component implements Canvas, Observable {
 		positions = newPositions;
 	}
 	
-	public List<Observer> getObservers() {
-		if (observers == null) {
-			observers = new ArrayList<>();
-		}
-		
-		return observers;
+//	public List<Observer> getObservers() {
+//		if (observers == null) {
+//			observers = new ArrayList<>();
+//		}
+//		
+//		return observers;
+//	}
+	
+	@JsonIgnore
+	public FactoryModelChangedNotifier getNotifier() {
+	    return notifier;
+	}
+
+	@JsonIgnore
+	public void setNotifier(final FactoryModelChangedNotifier notifier) {
+	    this.notifier = notifier;
 	}
 
 	@Override
 	public boolean addObserver(Observer observer) {
-		return getObservers().add(observer);
+		return notifier != null && notifier.addObserver(observer);
+//		return getObservers().add(observer);
 	}
 
 	@Override
 	public boolean removeObserver(Observer observer) {
-		return getObservers().remove(observer);
+		return notifier != null && notifier.removeObserver(observer);
+//		return getObservers().remove(observer);
 	}
 	
 	public void notifyObservers() {
-		for (final Observer observer : getObservers()) {
-			observer.modelChanged();
-		}
+		if (notifier != null) {
+	        notifier.notifyObservers();
+	    }
+		
+//		for (final Observer observer : getObservers()) {
+//			observer.modelChanged();
+//		}
 	}
 	
 	public boolean addComponent(final Component component) {

@@ -1,0 +1,31 @@
+package fr.tp.inf112.projects.robotsim.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import fr.tp.inf112.projects.canvas.controller.Observer;
+
+public class LocalFactoryModelChangedNotifier implements FactoryModelChangedNotifier {
+	private transient List<Observer> observers;
+	
+	public LocalFactoryModelChangedNotifier() {
+		observers = new ArrayList<>();
+	}
+
+	@Override
+	public void notifyObservers() {
+		for (final Observer observer : observers) {
+			observer.modelChanged();
+		}
+	}
+
+	@Override
+	public boolean addObserver(final Observer observer) {
+		return observers.add(observer);
+	}
+
+	@Override
+	public boolean removeObserver(final Observer observer) {
+		return observers.remove(observer);
+	}
+}

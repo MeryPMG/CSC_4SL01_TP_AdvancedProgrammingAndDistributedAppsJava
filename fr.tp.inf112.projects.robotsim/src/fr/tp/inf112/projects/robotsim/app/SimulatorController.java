@@ -51,7 +51,15 @@ public class SimulatorController implements CanvasViewerController {
 	 */
 	@Override
 	public void setCanvas(final Canvas canvasModel) {
-		factoryModel = (Factory) canvasModel;
+//		factoryModel = (Factory) canvasModel;
+		final Factory newFactory = (Factory) canvasModel;
+
+	    if (factoryModel != null) {
+	        newFactory.setNotifier(factoryModel.getNotifier());
+	    }
+
+	    factoryModel = newFactory;
+	    factoryModel.notifyObservers();
 	}
 	
 	/**
