@@ -44,10 +44,8 @@ public class Robot extends Component {
 	@JsonIgnore
 	private transient Iterator<Position> currentPathPositionsIter;
 	
-	@JsonIgnore
 	private transient boolean blocked;
 	
-	@JsonIgnore
 	private transient boolean temporarilyBlocked;
 	
 	private Position blockedTargetPosition;
@@ -87,12 +85,12 @@ public class Robot extends Component {
 	    this(null, null, null, null, null);
 	}
 	
-	private void setBlocked(boolean blocked) {
+	public void setBlocked(boolean blocked) {
 		this.blocked = blocked;
 		notifyObservers();
 	}
 	
-	private void setTemporarilyBlocked(boolean temporarilyBlocked) {
+	public void setTemporarilyBlocked(boolean temporarilyBlocked) {
 		this.temporarilyBlocked = temporarilyBlocked;
 		notifyObservers();
 	}
@@ -163,12 +161,10 @@ public class Robot extends Component {
 		return true;
 	}
 	
-	@JsonIgnore
 	public boolean isBlocked() {
 		return blocked;
 	}
 	
-	@JsonIgnore
 	public boolean isTemporarilyBlocked() {
 		return temporarilyBlocked;
 	}
@@ -185,7 +181,9 @@ public class Robot extends Component {
 		if (currTargetComponent == null || hasReachedCurrentTarget()) {
 			currTargetComponent = nextTargetComponentToVisit();
 			
+			LOGGER.info(getName() + " START path with " + getPathFinder().getClass().getSimpleName());
 			computePathToCurrentTargetComponent();
+			LOGGER.info(getName() + " FINISH path with " + getPathFinder().getClass().getSimpleName());
 		}
 
 		return moveToNextPathPosition() != 0;
@@ -199,7 +197,13 @@ public class Robot extends Component {
 				while (targetComponentsIterator.hasNext()) {
 					Component component = targetComponentsIterator.next();
 
-					if (component == currTargetComponent) {
+//					if (component == currTargetComponent) {
+//						break;
+//					}
+					
+					if (component.getClass().equals(currTargetComponent.getClass())
+						&& component.getxCoordinate() == currTargetComponent.getxCoordinate()
+						&& component.getyCoordinate() == currTargetComponent.getyCoordinate()) {
 						break;
 					}
 				}
@@ -389,7 +393,7 @@ public class Robot extends Component {
 					behave();
 					
 					try {
-						Thread.sleep(100);
+						Thread.sleep(250);
 					}
 					catch (InterruptedException ex) {
 						LOGGER.log(Level.WARNING, "Simulation was abruptly interrupted", ex);
