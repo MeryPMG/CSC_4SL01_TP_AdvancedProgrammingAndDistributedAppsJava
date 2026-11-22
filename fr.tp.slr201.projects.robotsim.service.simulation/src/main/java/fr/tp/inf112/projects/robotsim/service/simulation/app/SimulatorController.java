@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import fr.tp.inf112.projects.robotsim.model.Factory;
+import fr.tp.inf112.projects.robotsim.model.FactoryModelChangedNotifier;
 import fr.tp.inf112.projects.robotsim.persistence.RemoteFactoryPersistenceManager;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +27,9 @@ public class SimulatorController {
     
     private final RemoteFactoryPersistenceManager persistenceManager = new RemoteFactoryPersistenceManager(null);
     
+    @Autowired
+    private KafkaTemplate<String, Factory> simulationEventTemplate;
+    
     @PostMapping("/{factoryId}")
     public boolean startSimulation(@PathVariable String factoryId) {
         LOGGER.info("Starting factory " + factoryId);
@@ -31,6 +37,9 @@ public class SimulatorController {
         try {
             Factory factory = (Factory) persistenceManager.read(factoryId);
 
+			final FactoryModelChangedNotifier notifier = new KafkaFactoryModelChangeNotifier(factory, simulationEventTemplate);
+			factory.setNotifier(notifier);
+			
             simulatedFactories.add(factory);
 
             factory.startSimulation();

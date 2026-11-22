@@ -104,7 +104,7 @@ public class SimulatorApplication {
 				}
 				
 //				final Component factoryViewer = new CanvasViewer(new RemoteSimulatorController(factory, new RemoteFactoryPersistenceManager(canvasChooser)));
-				final Component factoryViewer = new CanvasViewer(new SimulatorController(factory, persistenceManager));
+				final Component factoryViewer = new CanvasViewer(new RemoteSimulatorController(factory, persistenceManager));
 				canvasChooser.setViewer(factoryViewer);
 				//new CanvasViewer(factory);
 			}

@@ -14,5 +14,7 @@
 	<classpathentry kind="lib" path="libs/jackson-annotations-2.21.jar"/>
 	<classpathentry kind="lib" path="libs/jackson-core-2.21.8.jar"/>
 	<classpathentry kind="lib" path="libs/jackson-databind-2.21.8.jar"/>
+	<classpathentry kind="lib" path="C:/0_YO/00_MARIA/0_TelecomParis/1_SEMESTER/1_PERIOD/CSC_4SL01_TP_AdvancedProgrammingAndDistributedAppsJava/Project/Kafka/kafka_2.13-3.8.1/libs/kafka-clients-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/maria/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
