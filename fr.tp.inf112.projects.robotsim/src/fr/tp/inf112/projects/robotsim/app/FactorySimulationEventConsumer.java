@@ -19,31 +19,54 @@ public class FactorySimulationEventConsumer {
 	private final KafkaConsumer<String, String> consumer;
 
 	private final RemoteSimulatorController controller;
+	
+	private final String factoryId;
 
-	public FactorySimulationEventConsumer(final RemoteSimulatorController controller) {
+    private volatile boolean running = true;
+
+	public FactorySimulationEventConsumer(final RemoteSimulatorController controller, 
+										  final Factory factory) {
 		this.controller = controller;
+		this.factoryId = factory.getId();
 
 		final Properties props = SimulationServiceUtils.getDefaultConsumerProperties();
 		props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 
 		this.consumer = new KafkaConsumer<>(props);
-		final String topicName = SimulationServiceUtils.getTopicName((Factory) controller.getCanvas());
+		final String topicName = SimulationServiceUtils.getTopicName(factory);
 		consumer.subscribe(Collections.singletonList(topicName));
 	}
 
 	public void consumeMessages() {
 		try {
-			while (controller.isAnimationRunning()) {
-				final ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+            while (running) {
+                final ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
 
-				for (final ConsumerRecord<String, String> record : records) {
-					LOGGER.fine("Received JSON Factory text '" + record.value() + "'.");
-					controller.setCanvas(record.value());
-				}
-			}
-		} finally {
-			consumer.close();
-		}
+                for (final ConsumerRecord<String, String> record : records) {
+                	LOGGER.fine("Received JSON Factory text '" + record.value() + "'.");
+                    controller.updateCanvasFromSimulationEvent(factoryId, record.value());
+                }
+            }
+        } finally {
+            consumer.close();
+        }
+		
+//		try {
+//			while (controller.isAnimationRunning()) {
+//				final ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+//
+//				for (final ConsumerRecord<String, String> record : records) {
+//					LOGGER.fine("Received JSON Factory text '" + record.value() + "'.");
+//					controller.setCanvas(record.value());
+//				}
+//			}
+//		} finally {
+//			consumer.close();
+//		}
 	}
+	
+	public void stop() {
+        running = false;
+    }
 }

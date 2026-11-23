@@ -33,6 +33,13 @@ public class SimulatorController {
     @PostMapping("/{factoryId}")
     public boolean startSimulation(@PathVariable String factoryId) {
         LOGGER.info("Starting factory " + factoryId);
+        
+        final Factory existingFactory = findFactory(factoryId);
+
+        if (existingFactory != null) {
+            LOGGER.info("Factory " + factoryId + " is already being simulated");
+            return true;
+        }
 
         try {
             Factory factory = (Factory) persistenceManager.read(factoryId);

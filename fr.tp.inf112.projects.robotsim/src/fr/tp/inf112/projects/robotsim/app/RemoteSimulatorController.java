@@ -35,6 +35,10 @@ public class RemoteSimulatorController extends SimulatorController {
     
     private final LocalFactoryModelChangedNotifier notifier;
     
+    private FactorySimulationEventConsumer eventConsumer;
+    
+    private Thread consumerThread;
+    
     public RemoteSimulatorController(final Factory factoryModel,
             						 final CanvasPersistenceManager persistenceManager) {
         super(factoryModel, persistenceManager);
@@ -58,9 +62,7 @@ public class RemoteSimulatorController extends SimulatorController {
     	        						   ObjectMapper.DefaultTyping.NON_FINAL);
     }
     
-    private URI getSimulationUri() throws URISyntaxException {
-    	final String factoryId = getCanvas().getId();
-
+    private URI getSimulationUri(final String factoryId) throws URISyntaxException {
     	return new URI("http",
     		            null,
     		            "localhost",
@@ -68,6 +70,10 @@ public class RemoteSimulatorController extends SimulatorController {
     		            "/simulation/" + factoryId,
     		            null,
     		            null);
+    }
+    
+    private URI getSimulationUri() throws URISyntaxException {
+        return getSimulationUri(getCanvas().getId());
     }
 	
 //	private Factory getFactory() throws IOException, InterruptedException, URISyntaxException {
@@ -82,9 +88,12 @@ public class RemoteSimulatorController extends SimulatorController {
 //		return objectMapper.readValue(response.body(), Factory.class);
 //	}
 //	
+	
 	@Override
 	public void startAnimation() {
 		try {
+			final Factory currentFactory = (Factory) getCanvas();
+
 			final HttpRequest request = HttpRequest.newBuilder().uri(getSimulationUri())
 										.POST(HttpRequest.BodyPublishers.noBody()).build();
 
@@ -93,29 +102,49 @@ public class RemoteSimulatorController extends SimulatorController {
 			LOGGER.info("Simulation start request returned: " + response.body());
 
 			if (Boolean.parseBoolean(response.body())) {
-				((Factory) getCanvas()).setSimulationStarted(true);
-				
-				final FactorySimulationEventConsumer eventConsumer = new FactorySimulationEventConsumer(this);
+				currentFactory.setSimulationStarted(true);
 
-				final Thread consumerThread = new Thread(() -> {
-					eventConsumer.consumeMessages();
-				});
-
-				consumerThread.start();
-
-//				final Thread refreshFactoryThread = new Thread(() -> {
-//					try {
-//						updateViewer();
-//					} catch (InterruptedException | URISyntaxException | IOException ex) {
-//						LOGGER.log(Level.SEVERE, "Error updating remote factory", ex);
-//					}
-//				});
-//				refreshFactoryThread.start();
+				startConsumer(currentFactory);
 			}
 		} catch (IOException | InterruptedException | URISyntaxException ex) {
 			LOGGER.log(Level.SEVERE, "Could not start remote simulation", ex);
 		}
 	}
+	
+//	@Override
+//	public void startAnimation() {
+//		try {
+//			final HttpRequest request = HttpRequest.newBuilder().uri(getSimulationUri())
+//										.POST(HttpRequest.BodyPublishers.noBody()).build();
+//
+//			final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+//
+//			LOGGER.info("Simulation start request returned: " + response.body());
+//
+//			if (Boolean.parseBoolean(response.body())) {
+//				((Factory) getCanvas()).setSimulationStarted(true);
+//				
+//				final FactorySimulationEventConsumer eventConsumer = new FactorySimulationEventConsumer(this);
+//
+//				final Thread consumerThread = new Thread(() -> {
+//					eventConsumer.consumeMessages();
+//				});
+//
+//				consumerThread.start();
+//
+////				final Thread refreshFactoryThread = new Thread(() -> {
+////					try {
+////						updateViewer();
+////					} catch (InterruptedException | URISyntaxException | IOException ex) {
+////						LOGGER.log(Level.SEVERE, "Error updating remote factory", ex);
+////					}
+////				});
+////				refreshFactoryThread.start();
+//			}
+//		} catch (IOException | InterruptedException | URISyntaxException ex) {
+//			LOGGER.log(Level.SEVERE, "Could not start remote simulation", ex);
+//		}
+//	}
 	
 //	private void updateViewer() throws InterruptedException, URISyntaxException, IOException {
 //		Factory remoteFactoryModel = getFactory();
@@ -139,9 +168,13 @@ public class RemoteSimulatorController extends SimulatorController {
 	
 	@Override
 	public void setCanvas(final Canvas canvasModel) {
-		super.setCanvas(canvasModel);
+		stopCurrentConsumer();
+
+	    super.setCanvas(canvasModel);
 
 	    notifier.notifyObservers();
+
+	    reconnectIfRunning((Factory) canvasModel);
 	    
 //		final Factory currentFactory = (Factory) getCanvas();
 //		
@@ -158,15 +191,64 @@ public class RemoteSimulatorController extends SimulatorController {
 //		newFactory.notifyObservers();
 	}
 	
-	public void setCanvas(final String factoryAsJsonString) {
+//	public void setCanvas(final String factoryAsJsonString) {
+//		try {
+//			final Factory factoryModel = objectMapper.readValue(factoryAsJsonString, Factory.class);
+//
+//			setCanvas(factoryModel);
+//		} catch (IOException ex) {
+//			LOGGER.log(Level.SEVERE, "Could not deserialize received Factory", ex);
+//		}
+//	}
+	
+	private void reconnectIfRunning(final Factory loadedFactory) {
+		try {
+			final Factory runningFactory = getRemoteRunningFactory(loadedFactory.getId());
+
+			if (runningFactory == null) {
+				return;
+			}
+
+			super.setCanvas(runningFactory);
+
+			notifier.notifyObservers();
+
+			startConsumer(runningFactory);
+		} catch (IOException | InterruptedException | URISyntaxException ex) {
+			LOGGER.log(Level.SEVERE, "Could not reconnect to running simulation", ex);
+		}
+	}
+	
+	private Factory getRemoteRunningFactory(final String factoryId) throws IOException, InterruptedException, URISyntaxException {
+		final HttpRequest request = HttpRequest.newBuilder().uri(getSimulationUri(factoryId)).GET().build();
+
+		final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+		if (response.body() == null || response.body().isBlank()) {
+			return null;
+		}
+
+		return objectMapper.readValue(response.body(), Factory.class);
+	}
+	
+	public void updateCanvasFromSimulationEvent(final String factoryId, final String factoryAsJsonString) {
+		final Canvas currentCanvas = getCanvas();
+
+		if (currentCanvas == null || !currentCanvas.getId().equals(factoryId)) {
+			return;
+		}
+		
 		try {
 			final Factory factoryModel = objectMapper.readValue(factoryAsJsonString, Factory.class);
 
-			setCanvas(factoryModel);
+			super.setCanvas(factoryModel);
+
+			notifier.notifyObservers();
 		} catch (IOException ex) {
 			LOGGER.log(Level.SEVERE, "Could not deserialize received Factory", ex);
 		}
 	}
+	
 	
 	@Override
 	public void stopAnimation() {
@@ -176,10 +258,31 @@ public class RemoteSimulatorController extends SimulatorController {
 			final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
 			LOGGER.info("Simulation stop request returned: " + response.body());
+
+			if (Boolean.parseBoolean(response.body())) {
+				stopCurrentConsumer();
+
+				((Factory) getCanvas()).setSimulationStarted(false);
+
+				notifier.notifyObservers();
+			}
 		} catch (IOException | InterruptedException | URISyntaxException ex) {
 			LOGGER.log(Level.SEVERE, "Could not stop remote simulation", ex);
 		}
 	}
+	
+//	@Override
+//	public void stopAnimation() {
+//		try {
+//			final HttpRequest request = HttpRequest.newBuilder().uri(getSimulationUri()).DELETE().build();
+//
+//			final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+//
+//			LOGGER.info("Simulation stop request returned: " + response.body());
+//		} catch (IOException | InterruptedException | URISyntaxException ex) {
+//			LOGGER.log(Level.SEVERE, "Could not stop remote simulation", ex);
+//		}
+//	}
 	
 	@Override
 	public boolean addObserver(final Observer observer) {
@@ -189,5 +292,26 @@ public class RemoteSimulatorController extends SimulatorController {
 	@Override
 	public boolean removeObserver(final Observer observer) {
 	    return notifier.removeObserver(observer);
+	}
+	
+	private void stopCurrentConsumer() {
+	    if (eventConsumer != null) {
+	        eventConsumer.stop();
+	        eventConsumer = null;
+	    }
+
+	    consumerThread = null;
+	}
+	
+	private void startConsumer(final Factory factory) {
+		stopCurrentConsumer();
+
+		eventConsumer = new FactorySimulationEventConsumer(this, factory);
+		
+		consumerThread = new Thread(() -> {
+		    eventConsumer.consumeMessages();
+		});
+
+		consumerThread.start();
 	}
 }
