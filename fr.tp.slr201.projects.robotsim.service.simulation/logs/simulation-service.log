@@ -1,19 +1,19 @@
-2026-11-24 00:49:01.704 INFO  [main] f.t.i.p.r.s.s.app.Application - Starting Application using Java 27 with PID 43696 (C:\0_YO\00_MARIA\0_TelecomParis\1_SEMESTER\1_PERIOD\CSC_4SL01_TP_AdvancedProgrammingAndDistributedAppsJava\Project\RoboticFactorySimulator\fr.tp.slr201.projects.robotsim.service.simulation\target\classes started by maria in C:\0_YO\00_MARIA\0_TelecomParis\1_SEMESTER\1_PERIOD\CSC_4SL01_TP_AdvancedProgrammingAndDistributedAppsJava\Project\RoboticFactorySimulator\fr.tp.slr201.projects.robotsim.service.simulation)
-2026-11-24 00:49:01.706 INFO  [main] f.t.i.p.r.s.s.app.Application - No active profile set, falling back to 1 default profile: "default"
-2026-11-24 00:49:02.370 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-2026-11-24 00:49:02.383 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-11-24 00:49:02.383 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
-2026-11-24 00:49:02.424 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-11-24 00:49:02.425 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 687 ms
-2026-11-24 00:49:02.724 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-2026-11-24 00:49:02.729 INFO  [main] f.t.i.p.r.s.s.app.Application - Started Application in 1.672 seconds (process running for 1.938)
-2026-11-24 00:49:11.748 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-11-24 00:49:11.748 INFO  [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-11-24 00:49:11.749 INFO  [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2026-11-24 00:49:11.772 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
-2026-11-24 00:49:18.805 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
-2026-11-24 00:49:18.867 INFO  [http-nio-9090-exec-3] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:49:18.938 INFO  [http-nio-9090-exec-3] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+2026-11-25 23:09:01.027 INFO  [main] f.t.i.p.r.s.s.app.Application - Starting Application using Java 27 with PID 51716 (C:\0_YO\00_MARIA\0_TelecomParis\1_SEMESTER\1_PERIOD\CSC_4SL01_TP_AdvancedProgrammingAndDistributedAppsJava\Project\RoboticFactorySimulator\fr.tp.slr201.projects.robotsim.service.simulation\target\classes started by maria in C:\0_YO\00_MARIA\0_TelecomParis\1_SEMESTER\1_PERIOD\CSC_4SL01_TP_AdvancedProgrammingAndDistributedAppsJava\Project\RoboticFactorySimulator\fr.tp.slr201.projects.robotsim.service.simulation)
+2026-11-25 23:09:01.030 INFO  [main] f.t.i.p.r.s.s.app.Application - No active profile set, falling back to 1 default profile: "default"
+2026-11-25 23:09:01.832 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2026-11-25 23:09:01.846 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-25 23:09:01.847 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-11-25 23:09:01.889 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-25 23:09:01.889 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 823 ms
+2026-11-25 23:09:02.253 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2026-11-25 23:09:02.258 INFO  [main] f.t.i.p.r.s.s.app.Application - Started Application in 1.884 seconds (process running for 2.193)
+2026-11-25 23:09:13.287 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-25 23:09:13.288 INFO  [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-25 23:09:13.288 INFO  [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-11-25 23:09:13.317 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
+2026-11-25 23:09:16.141 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
+2026-11-25 23:09:16.215 INFO  [http-nio-9090-exec-3] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
+2026-11-25 23:09:16.356 INFO  [http-nio-9090-exec-3] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -109,963 +109,347 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2026-11-24 00:49:19.076 INFO  [http-nio-9090-exec-3] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
-2026-11-24 00:49:19.116 INFO  [http-nio-9090-exec-3] o.a.k.clients.producer.KafkaProducer - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Instantiated an idempotent producer.
-2026-11-24 00:49:19.203 INFO  [http-nio-9090-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
-2026-11-24 00:49:19.206 INFO  [http-nio-9090-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
-2026-11-24 00:49:19.207 INFO  [http-nio-9090-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1795477759199
-2026-11-24 00:49:19.900 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 1 : {simulation-startup.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:49:19.901 INFO  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Cluster ID: RKCldff-TaKZ2lA0fkma4g
-2026-11-24 00:49:20.082 INFO  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.a.k.c.p.i.TransactionManager - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] ProducerId set to 0 with epoch 0
-2026-11-24 00:49:20.086 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 6 : {simulation-startup.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:49:20.435 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
-2026-11-24 00:49:20.440 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:20.444 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:20.966 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:23.712 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:32.072 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:32.419 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:33.776 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:33.782 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:43.557 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:44.030 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:44.293 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
-2026-11-24 00:49:44.354 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:49:45.150 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:45.162 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:45.780 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.1_2026_11_22.factory
-2026-11-24 00:49:47.334 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.1_2026_11_22.factory
-2026-11-24 00:49:47.357 INFO  [http-nio-9090-exec-2] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:49:47.376 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 383 : {simulation-kafka1.1_2026_11_22.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:49:47.492 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:47.491 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.1_2026_11_22.factory is now being simulated
-2026-11-24 00:49:47.494 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:47.867 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:51.712 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
-2026-11-24 00:49:51.813 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:52.097 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:52.548 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:57.878 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:57.889 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:58.065 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:58.552 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:49:58.555 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:49:58.815 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:49:58.887 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:58.894 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:49:58.895 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.078 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.153 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.343 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.406 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.608 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.672 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.875 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:49:59.938 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.142 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.202 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.394 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.455 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.663 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.722 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:00.907 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
-2026-11-24 00:50:00.909 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
-2026-11-24 00:50:02.870 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.1_2026_11_22.factory
-2026-11-24 00:50:03.568 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:04.021 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:06.052 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:06.130 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
-2026-11-24 00:50:08.705 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:08.723 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:12.645 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:13.911 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:13.921 INFO  [http-nio-9090-exec-10] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:50:13.935 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 914 : {simulation-kafka1.2_2026_11_22.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:50:14.060 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.2_2026_11_22.factory is now being simulated
-2026-11-24 00:50:14.062 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:14.062 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:14.442 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:17.206 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.1_2026_11_22.factory
-2026-11-24 00:50:17.769 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:18.171 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:18.641 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:18.643 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:18.901 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:19.166 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:19.399 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:19.431 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:19.697 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:19.883 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:19.965 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:20.227 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:20.484 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:20.745 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:21.009 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:21.279 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:21.540 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:21.804 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:22.070 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:22.194 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:22.334 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:22.458 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:22.598 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:22.723 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:22.866 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:22.987 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:23.132 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:23.253 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:23.394 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:23.519 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:23.659 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:23.788 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:23.923 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:24.049 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:24.191 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:24.313 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:24.455 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:24.578 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:24.718 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:24.844 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:24.920 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:24.933 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:24.983 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:25.107 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:25.247 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:25.370 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:25.509 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:25.633 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:25.773 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:25.898 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:26.039 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:26.166 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:26.304 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:26.430 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:26.575 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:26.668 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:26.694 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:26.835 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:26.961 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:27.102 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:27.227 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:27.368 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:27.493 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:27.632 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:27.754 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:27.894 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:28.021 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:28.146 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:28.286 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:28.410 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:28.553 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:28.677 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:28.815 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:28.941 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:29.082 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:29.205 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:29.344 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:29.470 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:29.612 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:29.736 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:29.875 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:30.001 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:30.142 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:30.268 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:30.410 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:30.532 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:30.674 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:30.797 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:30.937 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:31.062 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:31.201 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:31.326 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:31.465 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:31.588 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:31.730 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:31.852 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:31.993 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:32.116 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:32.260 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:32.368 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:32.524 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:32.633 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:32.791 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:32.898 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:33.052 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:33.061 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.3_2026_11_22.factory
-2026-11-24 00:50:33.164 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:33.320 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:33.430 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:33.601 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:33.600 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:33.694 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:33.867 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:33.960 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.133 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:34.155 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:34.156 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.230 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.398 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:34.412 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.3_2026_11_22.factory
-2026-11-24 00:50:34.414 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.435 INFO  [http-nio-9090-exec-4] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:50:34.451 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 1543 : {simulation-kafka1.3_2026_11_22.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:50:34.495 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.574 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.3_2026_11_22.factory is now being simulated
-2026-11-24 00:50:34.576 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:34.576 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:34.664 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:34.680 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.759 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:34.786 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:34.931 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:34.946 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.024 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.192 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:35.210 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.288 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.445 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:35.461 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.540 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.697 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:35.714 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.793 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:35.965 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:35.980 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.059 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.216 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:36.232 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.329 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.484 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.484 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:36.593 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.749 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:36.750 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:36.859 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.002 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.018 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:37.110 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:37.135 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.266 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.281 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:37.390 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.531 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.546 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:37.656 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.706 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:37.707 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.795 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.811 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:37.921 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:37.967 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.061 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.077 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:38.187 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.233 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.310 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:38.318 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:38.321 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.327 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.342 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:38.442 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:38.452 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.500 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.577 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.593 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.610 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:38.720 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.766 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.844 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.858 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:38.875 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:38.986 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.048 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.108 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.126 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.140 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:39.250 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.276 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:39.310 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.373 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.389 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.403 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:39.512 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.577 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.640 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.653 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.668 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:39.779 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.841 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.903 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.918 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:39.935 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:40.041 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.104 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.166 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.185 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.197 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:40.293 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.355 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.418 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.449 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:40.449 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.560 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.619 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.685 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.715 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:40.716 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.824 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.870 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.948 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:40.979 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:40.980 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.089 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.136 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.213 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.246 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:41.248 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.267 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:41.267 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.2_2026_11_22.factory has been stopped
-2026-11-24 00:50:41.356 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.404 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.512 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:41.620 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.666 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.776 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:41.884 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:41.931 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.040 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:42.150 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.200 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.304 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:42.413 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.458 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.568 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:42.677 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.725 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.833 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:42.942 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:42.943 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:42.990 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.101 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.207 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.208 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.255 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.363 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.472 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.474 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.520 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.626 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.734 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.734 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.782 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:43.890 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:43.989 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.001 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.047 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.154 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.247 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.262 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.309 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.419 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.512 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.527 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.576 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.603 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:44.683 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.780 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.792 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:44.839 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:44.950 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.043 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.056 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.103 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.214 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.307 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.321 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.368 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.475 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.571 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.586 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.634 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.743 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.837 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:45.866 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:45.898 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.009 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.100 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.130 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.160 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.269 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.353 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.2_2026_11_22.factory
-2026-11-24 00:50:46.365 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.381 INFO  [http-nio-9090-exec-9] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:50:46.386 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.2_2026_11_22.factory is now being simulated
-2026-11-24 00:50:46.387 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:46.389 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:46.396 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.428 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.538 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.629 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.659 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.690 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.796 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:46.799 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.894 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:46.925 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:46.942 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.065 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.159 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.189 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.205 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.331 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.423 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.454 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.470 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.596 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.689 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.720 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.735 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.860 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:47.957 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:47.986 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.004 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.111 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.221 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.250 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.266 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.375 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.484 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.515 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.531 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.639 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.749 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.780 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:48.797 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:48.904 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.013 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.044 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.060 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.170 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.279 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.310 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.327 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.435 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.543 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.574 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.590 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.698 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.807 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.835 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:49.851 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:49.961 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.070 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.101 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.117 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.226 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.335 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.366 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.382 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.459 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:50.492 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.599 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.630 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.646 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.754 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.864 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:50.894 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:50.910 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.019 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.132 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.160 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.177 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.285 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.393 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.425 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.443 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.549 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.657 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.687 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.704 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.806 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.1_2026_11_22.factory
-2026-11-24 00:50:51.813 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:51.813 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.922 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:51.952 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:51.968 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.077 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.185 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.217 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.234 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.340 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.347 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:50:52.451 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.482 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.498 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.607 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.715 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.746 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.761 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:52.870 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:52.982 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:53.012 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:53.027 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:53.136 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:53.246 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:53.276 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:53.293 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:53.366 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.1_2026_11_22.factory
-2026-11-24 00:50:53.367 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.1_2026_11_22.factory has been stopped
-2026-11-24 00:50:53.541 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:53.557 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:53.804 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:53.820 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:54.069 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:54.087 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:54.336 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:54.353 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:54.603 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:54.619 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:54.865 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:54.878 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:55.130 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:55.146 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:55.411 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:55.412 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:55.667 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:55.679 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:55.930 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:55.944 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:56.193 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:56.211 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:56.456 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:56.473 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:56.722 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:56.739 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:56.988 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:57.004 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:57.209 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.3_2026_11_22.factory
-2026-11-24 00:50:57.253 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:57.268 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:57.518 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:57.532 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:57.563 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:57.573 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:50:57.784 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:57.799 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:58.046 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:58.064 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:58.312 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:58.329 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:58.580 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:58.596 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:58.847 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:58.860 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:59.113 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:59.126 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:59.377 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:59.377 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:59.643 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:50:59.648 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:50:59.884 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.3_2026_11_22.factory
-2026-11-24 00:50:59.885 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.3_2026_11_22.factory has been stopped
-2026-11-24 00:51:01.998 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.1_2026_11_22.factory
-2026-11-24 00:51:06.157 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:06.639 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:06.642 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:06.786 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.2_2026_11_22.factory
-2026-11-24 00:51:06.903 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:07.168 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:07.434 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:07.697 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:07.951 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:08.217 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:08.481 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:08.743 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:08.996 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:09.261 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:09.527 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:09.791 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:10.053 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:10.317 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:10.583 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:10.846 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:11.065 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:11.112 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:11.330 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:11.377 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:11.593 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:11.603 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.2_2026_11_22.factory
-2026-11-24 00:51:11.603 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.2_2026_11_22.factory has been stopped
-2026-11-24 00:51:14.731 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.3_2026_11_22.factory
-2026-11-24 00:51:19.501 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.4_2026_11_22.factory
-2026-11-24 00:51:20.873 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.4_2026_11_22.factory
-2026-11-24 00:51:20.882 INFO  [http-nio-9090-exec-9] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:51:20.896 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 2720 : {simulation-kafka1.4_2026_11_22.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:51:21.022 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.4_2026_11_22.factory is now being simulated
-2026-11-24 00:51:21.024 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:51:21.024 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:21.698 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:21.700 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:21.959 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:22.210 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:22.461 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:22.714 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:22.966 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:23.231 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:23.485 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:23.750 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:24.033 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:24.286 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:24.550 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:24.817 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:25.082 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:25.133 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:51:25.134 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:25.351 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:25.391 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:25.611 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:25.657 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:25.881 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:25.924 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:26.143 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:26.188 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:26.408 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:26.454 INFO  [Thread-83] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:51:26.671 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.4_2026_11_22.factory
-2026-11-24 00:51:26.671 INFO  [Thread-84] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:51:26.671 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.4_2026_11_22.factory has been stopped
-2026-11-24 00:51:29.657 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
-2026-11-24 00:51:40.016 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
-2026-11-24 00:51:40.024 INFO  [http-nio-9090-exec-7] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:51:40.027 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
-2026-11-24 00:51:40.028 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:51:40.029 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:40.591 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:43.735 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:51:51.649 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:52.024 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:51:53.772 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:51:53.782 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:51:54.038 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
-2026-11-24 00:52:02.887 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:03.037 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:03.550 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:52:03.791 INFO  [Thread-98] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
-2026-11-24 00:52:04.810 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:04.820 INFO  [Thread-97] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:06.565 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
-2026-11-24 00:52:06.566 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
-2026-11-24 00:52:09.620 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
-2026-11-24 00:52:11.169 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
-2026-11-24 00:52:11.177 INFO  [http-nio-9090-exec-2] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:52:11.179 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
-2026-11-24 00:52:11.180 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:11.180 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:11.569 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:15.163 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:19.799 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:19.916 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:24.498 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:24.507 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:30.721 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:31.284 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:33.126 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:52:35.514 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:35.525 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:45.015 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:45.479 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:45.481 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:45.737 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:46.001 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:46.269 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:46.535 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:46.794 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:47.059 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:47.324 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:47.590 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:47.857 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:48.121 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:48.385 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:48.654 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:48.915 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:48.959 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:48.967 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:48.969 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.179 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.226 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.445 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.492 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.690 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1_2026_11_23.factory
-2026-11-24 00:52:49.708 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.756 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:49.973 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.021 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.241 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.284 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.504 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.551 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.770 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:50.818 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.040 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.085 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.301 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.338 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1_2026_11_23.factory
-2026-11-24 00:52:51.344 INFO  [http-nio-9090-exec-9] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:52:51.348 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.358 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 3732 : {simulation-kafka1_2026_11_23.factory=LEADER_NOT_AVAILABLE}
-2026-11-24 00:52:51.475 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1_2026_11_23.factory is now being simulated
-2026-11-24 00:52:51.477 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:51.478 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:51.567 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.613 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.832 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:51.879 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.085 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.130 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.224 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:52:52.349 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.396 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.616 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.662 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.881 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:52.929 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.147 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.194 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.413 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.459 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.680 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.712 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.944 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:53.975 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.208 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.239 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.474 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.505 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.724 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.772 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:54.977 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.026 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.242 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.289 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.364 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:55.494 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.540 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.633 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
-2026-11-24 00:52:55.760 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.805 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:55.883 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
-2026-11-24 00:52:56.021 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.069 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.288 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.336 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.555 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.601 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.817 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:56.866 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.070 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.118 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.337 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.382 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.601 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.649 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.869 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:57.914 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.133 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.180 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.399 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.446 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.663 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.709 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.930 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:58.974 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.197 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.225 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.459 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.489 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.551 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:59.561 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:52:59.725 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.756 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:52:59.993 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.019 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.255 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.287 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.521 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.552 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.786 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:00.820 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.052 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.078 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.3_2026_11_22.factory
-2026-11-24 00:53:01.083 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.316 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.347 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.570 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.599 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.835 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:01.850 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.103 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.116 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.368 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.384 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.634 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.652 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.900 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:02.914 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.162 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.179 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.430 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.445 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.691 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.709 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.957 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:03.971 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:04.220 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:04.234 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:04.483 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:04.500 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:04.748 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:04.766 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.016 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.031 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.228 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
-2026-11-24 00:53:05.280 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.296 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.530 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.564 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.783 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:05.832 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.045 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.091 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.140 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:06.311 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.358 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.577 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.627 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.706 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:06.708 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.841 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.888 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:06.965 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.092 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.155 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.219 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.345 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.423 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.485 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.610 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.688 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.751 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.878 INFO  [Thread-112] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.956 INFO  [Thread-111] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:07.967 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
-2026-11-24 00:53:07.968 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
-2026-11-24 00:53:08.017 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:08.280 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:08.546 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:08.812 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:09.080 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:09.342 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:09.606 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:09.873 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:10.135 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:10.399 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:10.662 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:10.914 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:11.180 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:11.443 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:11.709 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:11.761 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1_2026_11_23.factory
-2026-11-24 00:53:11.974 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:12.239 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:12.508 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:12.706 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:12.716 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:12.717 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:12.770 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:12.973 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.034 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.236 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.299 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.489 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.566 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.758 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:13.833 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.021 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.099 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.288 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.364 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.554 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.618 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.823 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:14.882 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:15.084 INFO  [Thread-125] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:15.148 INFO  [Thread-126] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:15.332 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1_2026_11_23.factory
-2026-11-24 00:53:15.333 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1_2026_11_23.factory has been stopped
-2026-11-24 00:53:17.326 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.1_2026_11_22.factory
-2026-11-24 00:53:18.596 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.1_2026_11_22.factory
-2026-11-24 00:53:18.605 INFO  [http-nio-9090-exec-2] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:53:18.607 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.1_2026_11_22.factory is now being simulated
-2026-11-24 00:53:18.609 INFO  [Thread-140] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:18.609 INFO  [Thread-139] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:18.925 INFO  [Thread-140] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:23.050 INFO  [Thread-139] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:23.077 INFO  [Thread-140] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:23.547 INFO  [Thread-140] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:24.255 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.1_2026_11_22.factory
-2026-11-24 00:53:24.256 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.1_2026_11_22.factory has been stopped
-2026-11-24 00:53:27.704 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory kafka1.3_2026_11_22.factory
-2026-11-24 00:53:29.096 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Starting factory kafka1.3_2026_11_22.factory
-2026-11-24 00:53:29.103 INFO  [http-nio-9090-exec-9] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
-2026-11-24 00:53:29.105 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.3_2026_11_22.factory is now being simulated
-2026-11-24 00:53:29.107 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:29.107 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:29.296 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:31.681 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:32.184 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
-2026-11-24 00:53:32.189 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:32.448 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:32.713 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:32.979 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:33.232 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:33.499 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:33.501 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:33.763 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:34.029 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:34.294 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:34.561 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:34.826 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:35.090 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:35.351 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:35.618 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:35.882 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:36.149 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:36.414 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:36.679 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:36.945 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:37.209 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:37.473 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:37.739 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.004 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:38.005 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.016 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
-2026-11-24 00:53:38.018 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.257 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.272 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.523 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.538 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.786 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:38.801 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:39.052 INFO  [Thread-154] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
-2026-11-24 00:53:39.067 INFO  [Thread-153] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
-2026-11-24 00:53:39.206 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory kafka1.3_2026_11_22.factory
-2026-11-24 00:53:39.206 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Factory kafka1.3_2026_11_22.factory has been stopped
-2026-11-24 00:53:54.522 INFO  [RMI TCP Connection(7)-10.188.214.19] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-2026-11-24 00:53:54.524 INFO  [RMI TCP Connection(7)-10.188.214.19] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-11-24 00:53:54.538 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-11-24 00:53:54.559 INFO  [RMI TCP Connection(7)-10.188.214.19] o.a.k.clients.producer.KafkaProducer - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-11-24 00:53:54.563 INFO  [RMI TCP Connection(7)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2026-11-24 00:53:54.563 INFO  [RMI TCP Connection(7)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-11-24 00:53:54.563 INFO  [RMI TCP Connection(7)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2026-11-24 00:53:54.563 INFO  [RMI TCP Connection(7)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2026-11-24 00:53:54.563 INFO  [RMI TCP Connection(7)-10.188.214.19] o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for fr.tp.slr201.projects.robotsim.service.simulation-producer-1 unregistered
+2026-11-25 23:09:16.527 INFO  [http-nio-9090-exec-3] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-11-25 23:09:16.585 INFO  [http-nio-9090-exec-3] o.a.k.clients.producer.KafkaProducer - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Instantiated an idempotent producer.
+2026-11-25 23:09:16.722 INFO  [http-nio-9090-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-11-25 23:09:16.726 INFO  [http-nio-9090-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-11-25 23:09:16.726 INFO  [http-nio-9090-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1795644556717
+2026-11-25 23:09:17.819 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 1 : {simulation-startup.factory=LEADER_NOT_AVAILABLE}
+2026-11-25 23:09:17.822 INFO  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Cluster ID: zdr-hn-nQR6-5yi3L3xWOA
+2026-11-25 23:09:18.027 INFO  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.a.k.c.p.i.TransactionManager - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] ProducerId set to 0 with epoch 0
+2026-11-25 23:09:18.032 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 6 : {simulation-startup.factory=LEADER_NOT_AVAILABLE}
+2026-11-25 23:09:18.265 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 7 : {simulation-startup.factory=LEADER_NOT_AVAILABLE}
+2026-11-25 23:09:18.857 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
+2026-11-25 23:09:18.862 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:18.871 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:19.401 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:22.783 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:30.488 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:30.916 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:31.888 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory test1.3_2026_11_25.factory
+2026-11-25 23:09:32.620 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:32.632 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:33.344 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Starting factory test1.3_2026_11_25.factory
+2026-11-25 23:09:33.385 INFO  [http-nio-9090-exec-4] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
+2026-11-25 23:09:33.408 WARN  [kafka-producer-network-thread | fr.tp.slr201.projects.robotsim.service.simulation-producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Error while fetching metadata with correlation id 194 : {simulation-test1.3_2026_11_25.factory=LEADER_NOT_AVAILABLE}
+2026-11-25 23:09:33.535 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Factory test1.3_2026_11_25.factory is now being simulated
+2026-11-25 23:09:33.536 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:33.536 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:34.196 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:37.483 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:38.265 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
+2026-11-25 23:09:41.868 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:42.394 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:42.661 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
+2026-11-25 23:09:42.815 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:43.082 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:43.808 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory test1.3_2026_11_25.factory
+2026-11-25 23:09:44.145 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:44.153 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:44.192 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:44.730 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:44.731 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:44.984 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:45.253 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:45.521 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:45.782 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:46.051 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:46.316 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:46.570 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:46.826 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.089 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.343 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.402 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:47.411 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:09:47.413 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.606 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.669 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.861 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:47.923 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.128 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.174 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.394 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.442 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.645 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.708 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.898 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:48.960 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.161 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.225 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.429 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.492 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.683 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.744 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.949 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:49.995 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.202 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.250 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.457 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.505 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.710 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.757 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:50.961 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.009 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.213 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.262 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.305 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory test1.3_2026_11_25.factory
+2026-11-25 23:09:51.467 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.516 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.721 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.787 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:51.988 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.050 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.254 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.302 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.523 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.571 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.787 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:52.836 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.052 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.099 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.321 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.366 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.585 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.633 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.853 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:53.898 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.121 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.152 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.244 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
+2026-11-25 23:09:54.387 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.418 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.652 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.685 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.919 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:54.951 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.174 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.220 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.442 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.489 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.704 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.752 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:55.960 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.020 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.144 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:56.223 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.284 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.489 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.551 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.687 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:09:56.689 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.742 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.803 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:56.944 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.007 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.070 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.212 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.259 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.323 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.463 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.478 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:57.510 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.589 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.733 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.746 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:57.777 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.841 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:57.998 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:57.999 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.031 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.094 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.250 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.250 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:58.282 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.346 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.502 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.503 INFO  [Thread-13] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:09:58.534 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.613 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.753 INFO  [Thread-14] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.756 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
+2026-11-25 23:09:58.757 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
+2026-11-25 23:09:58.802 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:58.865 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.053 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.118 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.307 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.370 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.574 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.637 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.838 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:09:59.901 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.092 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.157 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.347 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.411 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.602 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.666 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.854 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:00.933 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.119 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.198 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.371 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.482 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.623 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.748 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:01.886 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.012 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.153 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.277 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.420 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.533 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.684 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.755 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory test1.3_2026_11_25.factory
+2026-11-25 23:10:02.796 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:02.950 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.060 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.202 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.315 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.455 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.581 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.708 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.833 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:03.961 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.089 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.216 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.355 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.485 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.609 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.737 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.861 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:04.989 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.116 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.241 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.381 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.492 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.535 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
+2026-11-25 23:10:05.631 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.756 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:05.898 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.024 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.167 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.289 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.433 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.544 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.701 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.812 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:06.968 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.077 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.233 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.342 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.344 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
+2026-11-25 23:10:07.357 INFO  [http-nio-9090-exec-3] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
+2026-11-25 23:10:07.360 INFO  [http-nio-9090-exec-3] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
+2026-11-25 23:10:07.361 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:07.361 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:07.484 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.595 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.738 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.859 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:07.945 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:08.001 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.113 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.271 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.365 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.539 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.618 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.792 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:08.870 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.059 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.137 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.327 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.389 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.594 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.641 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.847 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:09.893 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.111 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.158 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.378 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.424 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.663 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.677 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.891 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:10.928 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:10.943 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.194 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.209 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.460 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.475 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.712 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.728 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.965 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:11.982 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.220 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.234 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.484 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.500 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.736 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.752 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:12.988 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.004 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.241 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.255 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.494 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.509 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.759 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:13.760 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.011 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.027 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.187 INFO  [http-nio-9090-exec-2] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory test1.3_2026_11_25.factory
+2026-11-25 23:10:14.277 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.293 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.543 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.559 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.794 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:14.826 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:15.048 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:15.079 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:15.316 INFO  [Thread-27] f.t.i.projects.robotsim.model.Robot - Robot 1 PERMANENTLY BLOCKED
+2026-11-25 23:10:15.345 INFO  [Thread-28] f.t.i.projects.robotsim.model.Robot - Robot 2 PERMANENTLY BLOCKED
+2026-11-25 23:10:15.524 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory test1.3_2026_11_25.factory
+2026-11-25 23:10:15.525 INFO  [http-nio-9090-exec-4] f.t.i.p.r.s.s.a.SimulatorController - Factory test1.3_2026_11_25.factory has been stopped
+2026-11-25 23:10:17.365 INFO  [http-nio-9090-exec-5] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
+2026-11-25 23:10:18.899 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:19.291 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:19.824 INFO  [Thread-42] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
+2026-11-25 23:10:19.979 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:10:20.243 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:20.251 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:21.802 INFO  [Thread-41] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:10:23.320 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
+2026-11-25 23:10:23.322 INFO  [http-nio-9090-exec-7] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
+2026-11-25 23:10:28.829 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
+2026-11-25 23:10:28.845 INFO  [http-nio-9090-exec-6] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
+2026-11-25 23:10:28.847 INFO  [http-nio-9090-exec-6] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
+2026-11-25 23:10:28.848 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:28.848 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:29.438 INFO  [Thread-56] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:31.221 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
+2026-11-25 23:10:31.221 INFO  [http-nio-9090-exec-9] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
+2026-11-25 23:10:32.722 INFO  [Thread-55] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:33.196 INFO  [http-nio-9090-exec-8] f.t.i.p.r.s.s.a.SimulatorController - Retrieving factory startup.factory
+2026-11-25 23:10:34.765 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Starting factory startup.factory
+2026-11-25 23:10:34.774 INFO  [http-nio-9090-exec-10] f.t.i.p.r.p.RemoteFactoryPersistenceManager - Received response from the remote server
+2026-11-25 23:10:34.776 INFO  [http-nio-9090-exec-10] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory is now being simulated
+2026-11-25 23:10:34.779 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:34.779 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:35.381 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:38.340 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:42.384 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 START path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:42.827 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 FINISH path with CustomDijkstraFactoryPathFinder
+2026-11-25 23:10:44.146 INFO  [Thread-70] f.t.i.projects.robotsim.model.Robot - Robot 2 TEMPORARILY BLOCKED
+2026-11-25 23:10:44.270 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 TEMPORARILY BLOCKED
+2026-11-25 23:10:46.118 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 START path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:46.129 INFO  [Thread-69] f.t.i.projects.robotsim.model.Robot - Robot 1 FINISH path with JGraphTDijkstraFactoryPathFinder
+2026-11-25 23:10:49.644 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Stopping factory startup.factory
+2026-11-25 23:10:49.645 INFO  [http-nio-9090-exec-1] f.t.i.p.r.s.s.a.SimulatorController - Factory startup.factory has been stopped
+2026-11-25 23:10:53.793 INFO  [RMI TCP Connection(3)-10.188.214.19] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-11-25 23:10:53.794 INFO  [RMI TCP Connection(3)-10.188.214.19] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-25 23:10:53.828 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-25 23:10:53.849 INFO  [RMI TCP Connection(3)-10.188.214.19] o.a.k.clients.producer.KafkaProducer - [Producer clientId=fr.tp.slr201.projects.robotsim.service.simulation-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-11-25 23:10:53.854 INFO  [RMI TCP Connection(3)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-11-25 23:10:53.854 INFO  [RMI TCP Connection(3)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-11-25 23:10:53.854 INFO  [RMI TCP Connection(3)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-11-25 23:10:53.854 INFO  [RMI TCP Connection(3)-10.188.214.19] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-11-25 23:10:53.855 INFO  [RMI TCP Connection(3)-10.188.214.19] o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for fr.tp.slr201.projects.robotsim.service.simulation-producer-1 unregistered

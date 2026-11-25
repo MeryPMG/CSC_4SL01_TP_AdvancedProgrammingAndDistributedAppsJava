@@ -1,0 +1,8 @@
+package fr.tp.inf112.projects.robotsim.service.simulation.app;
+
+public class SimulationServiceUtils {
+	public static final String BOOTSTRAP_SERVERS = "localhost:9092";
+	
+	private SimulationServiceUtils() {
+	}
+}

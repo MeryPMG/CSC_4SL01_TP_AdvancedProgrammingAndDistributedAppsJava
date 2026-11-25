@@ -1,14 +1,1 @@
-# Java compiled files
-*.class
-
-# Eclipse
-.metadata/
 **/bin/
-**/.settings/
-
-# Generated documentation
-fr.tp.inf112.projects.robotsim/doc/
-
-# JGraphT source and documentation
-fr.tp.inf112.projects.robotsim/libs/jgrapht/source/
-fr.tp.inf112.projects.robotsim/libs/jgrapht/javadoc/

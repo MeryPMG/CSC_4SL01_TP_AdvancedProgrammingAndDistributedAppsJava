@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;fr.tp.slr201.projects.robotsim.service.simulation&apos;" deleteContents="true" description="Delete resource &apos;fr.tp.slr201.projects.robotsim.service.simulation&apos;" element1="/fr.tp.slr201.projects.robotsim.service.simulation" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1794771438622"/>
+</session>

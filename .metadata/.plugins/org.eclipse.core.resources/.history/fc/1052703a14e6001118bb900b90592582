@@ -1,0 +1,87 @@
+package fr.tp.inf112.projects.robotsim.service.simulation.app;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import fr.tp.inf112.projects.robotsim.model.Factory;
+import fr.tp.inf112.projects.robotsim.persistence.RemoteFactoryPersistenceManager;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/simulation")
+public class SimulatorController {
+	private static final Logger LOGGER = Logger.getLogger(SimulatorController.class.getName());
+
+    private final List<Factory> simulatedFactories = new ArrayList<>();
+    
+    private final RemoteFactoryPersistenceManager persistenceManager = new RemoteFactoryPersistenceManager(null);
+    
+    @PostMapping("/{factoryId}")
+    public boolean startSimulation(@PathVariable String factoryId) {
+        LOGGER.info("Starting factory " + factoryId);
+
+        try {
+            Factory factory = (Factory) persistenceManager.read(factoryId);
+
+            simulatedFactories.add(factory);
+
+            factory.startSimulation();
+
+            LOGGER.info("Factory " + factoryId + " is now being simulated");
+
+            return true;
+        } catch (IOException ex) {
+        	LOGGER.log(Level.SEVERE, "Could not start factory " + factoryId, ex);
+        	
+            return false;
+        }
+    }
+    
+    @GetMapping("/{factoryId}")
+    public Factory getFactory(@PathVariable String factoryId) {
+//        LOGGER.info("Retrieving factory " + factoryId);
+//        
+//        return findFactory(factoryId);
+		final Factory factory = findFactory(factoryId);
+
+		LOGGER.info("SERVER simulationStarted = " + factory.isSimulationStarted());
+    }
+    
+    @DeleteMapping("/{factoryId}")
+    public boolean stopSimulation(@PathVariable String factoryId) {
+        LOGGER.info("Stopping factory " + factoryId);
+
+        Factory factory = findFactory(factoryId);
+
+        if (factory == null) {
+        	LOGGER.warning("Factory " + factoryId + " is not currently being simulated");
+
+            return false;
+        }
+
+        factory.stopSimulation();
+
+        simulatedFactories.remove(factory);
+
+        LOGGER.info("Factory " + factoryId + " has been stopped");
+
+        return true;
+    }
+    
+    private Factory findFactory(String factoryId) {
+        for (Factory factory : simulatedFactories) {
+            if (factory.getId().equals(factoryId)) {
+                return factory;
+            }
+        }
+        return null;
+    }
+}

@@ -1,0 +1,103 @@
+package fr.tp.inf112.projects.robotsim.persistence;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import fr.tp.inf112.projects.canvas.model.Canvas;
+import fr.tp.inf112.projects.canvas.model.CanvasChooser;
+import fr.tp.inf112.projects.canvas.model.impl.AbstractCanvasPersistenceManager;
+
+public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceManager {
+	private static final Logger LOGGER = Logger.getLogger(RemoteFactoryPersistenceManager.class.getName());
+	
+	private static final int SERVER_PORT = 55000;
+	
+	public RemoteFactoryPersistenceManager(final CanvasChooser canvasChooser) {
+		super(canvasChooser);
+	}
+
+	@Override
+	// Sends the filename as a String, then waits for the server 
+	// to send the factory model back
+	public Canvas read(String canvasId) throws IOException {
+		InetAddress serverNetAddr = InetAddress.getByName("localhost");
+		try (
+			Socket socket = new Socket(serverNetAddr, SERVER_PORT);
+		) {
+			OutputStream outStr = socket.getOutputStream();
+			OutputStream bufOutStream = new BufferedOutputStream(outStr);
+			ObjectOutputStream objOutStream = new ObjectOutputStream(bufOutStream);
+
+			objOutStream.writeObject(canvasId);
+			objOutStream.flush();
+
+			InputStream inpStr = socket.getInputStream();
+			InputStream bufInStream = new BufferedInputStream(inpStr);
+			ObjectInputStream objInStream = new ObjectInputStream(bufInStream);
+			
+			try {
+				Canvas receivedCanvas = (Canvas) objInStream.readObject();
+				
+				receivedCanvas.setId(canvasId);
+				
+				LOGGER.info("Received response from the remote server");
+				
+				return receivedCanvas;
+			} catch (ClassNotFoundException ex) {
+				LOGGER.log(Level.SEVERE, "Error receiving response from the remote server", ex);
+				throw new IOException(ex);
+			}
+		}
+	}
+
+	
+	// Connects to the server and sends the object to be persisted
+	public void persistWithoutChoosingName(Canvas canvasModel) throws IOException {
+		InetAddress serverNetAddr = InetAddress.getByName("localhost");
+		try (
+			Socket socket = new Socket(serverNetAddr, SERVER_PORT);
+		) {
+			OutputStream outStr = socket.getOutputStream();
+			OutputStream bufOutStream = new BufferedOutputStream(outStr);
+			ObjectOutputStream objOutStream = new ObjectOutputStream(bufOutStream);
+
+			objOutStream.writeObject(canvasModel);
+			objOutStream.flush();
+
+			LOGGER.info("Sent object to persist to the remote server");
+		}
+	}
+
+	@Override
+	public void persist(final Canvas canvasModel) throws IOException {
+		final CanvasChooser chooser = getCanvasChooser();
+
+		if (chooser instanceof RemoteFileCanvasChooser) {
+			final RemoteFileCanvasChooser remoteChooser = (RemoteFileCanvasChooser) chooser;
+
+			final String chosenId = remoteChooser.chooseSaveId(canvasModel.getId());
+
+			if (chosenId == null) {
+				return;
+			}
+
+			canvasModel.setId(chosenId);
+		}
+
+		persistWithoutChoosingName(canvasModel);
+	}
+	
+	@Override
+	public boolean delete(Canvas canvasModel) throws IOException {
+		return false;
+	}
+}

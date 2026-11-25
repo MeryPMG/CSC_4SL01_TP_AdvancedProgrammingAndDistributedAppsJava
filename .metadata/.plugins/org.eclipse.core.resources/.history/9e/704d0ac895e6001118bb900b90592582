@@ -1,0 +1,7 @@
+package fr.tp.inf112.projects.robotsim.service.simulation.app;
+
+import fr.tp.inf112.projects.robotsim.model.FactoryModelChangedNotifier;
+
+public class KafkaFactoryModelChangeNotifier implements FactoryModelChangedNotifier{
+
+}

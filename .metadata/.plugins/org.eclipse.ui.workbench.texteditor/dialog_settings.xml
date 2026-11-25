@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<item key="selection" value="final RemoteFileCanvasChooser canvasChooser = new RemoteFileCanvasChooser(&quot;factory&quot;, &quot;Puck Factory&quot;);"/>
+		<list key="findhistory">
+			<item value="st"/>
+			<item value="runtime"/>
+			<item value="poll"/>
+			<item value="read"/>
+			<item value="consumer.poll"/>
+			<item value="stringseri"/>
+			<item value="stringseril"/>
+			<item value="obser"/>
+			<item value="observer"/>
+			<item value="getfactor"/>
+			<item value="SEVERE"/>
+			<item value="SEVERE7"/>
+			<item value="SEVERE77"/>
+			<item value="jsonigno"/>
+			<item value="getfact"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,190 @@
+package fr.tp.inf112.projects.robotsim.app;
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.jsontype.BasicPolymorphicTypeValidator;
+import com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator;
+
+import fr.tp.inf112.projects.canvas.controller.Observer;
+import fr.tp.inf112.projects.canvas.model.Canvas;
+import fr.tp.inf112.projects.canvas.model.CanvasPersistenceManager;
+import fr.tp.inf112.projects.canvas.model.impl.BasicPoint;
+import fr.tp.inf112.projects.graph.impl.BasicVertex;
+import fr.tp.inf112.projects.robotsim.model.Component;
+import fr.tp.inf112.projects.robotsim.model.Factory;
+import fr.tp.inf112.projects.robotsim.model.LocalFactoryModelChangedNotifier;
+import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
+
+public class RemoteSimulatorController extends SimulatorController {
+	private static final Logger LOGGER = Logger.getLogger(RemoteSimulatorController.class.getName());
+
+	private final HttpClient httpClient;
+	
+    private final ObjectMapper objectMapper;
+    
+    private final LocalFactoryModelChangedNotifier notifier;
+    
+    public RemoteSimulatorController(final Factory factoryModel,
+            						 final CanvasPersistenceManager persistenceManager) {
+        super(factoryModel, persistenceManager);
+        
+        notifier = new LocalFactoryModelChangedNotifier();
+
+        httpClient = HttpClient.newHttpClient();
+
+        objectMapper = new ObjectMapper();
+		
+    	PolymorphicTypeValidator typeValidator = BasicPolymorphicTypeValidator.builder() 
+	    	.allowIfSubType(PositionedShape.class.getPackageName()) 
+	    	.allowIfSubType(Component.class.getPackageName()) 
+	    	.allowIfSubType(BasicVertex.class.getPackageName())
+	    	.allowIfSubType(BasicPoint.class.getPackageName())
+	    	.allowIfSubType(ArrayList.class.getName()) 
+	    	.allowIfSubType(LinkedHashSet.class.getName()) 
+	    	.build();
+    	
+    	objectMapper.activateDefaultTyping(typeValidator,
+    	        						   ObjectMapper.DefaultTyping.NON_FINAL);
+    }
+    
+    private URI getSimulationUri() throws URISyntaxException {
+    	final String factoryId = getCanvas().getId();
+
+    	return new URI("http",
+    		            null,
+    		            "localhost",
+    		            9090,
+    		            "/simulation/" + factoryId,
+    		            null,
+    		            null);
+    }
+	
+//	private Factory getFactory() throws IOException, InterruptedException, URISyntaxException {
+//		final URI uri = getSimulationUri();
+//		final HttpRequest request = HttpRequest.newBuilder().uri(uri).GET().build();
+//		final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+//		
+//		if (response.body() == null || response.body().isBlank()) {
+//	        return null;
+//	    }
+//		
+//		return objectMapper.readValue(response.body(), Factory.class);
+//	}
+//	
+	@Override
+	public void startAnimation() {
+		try {
+			final HttpRequest request = HttpRequest.newBuilder().uri(getSimulationUri())
+										.POST(HttpRequest.BodyPublishers.noBody()).build();
+
+			final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+			LOGGER.info("Simulation start request returned: " + response.body());
+
+			if (Boolean.parseBoolean(response.body())) {
+				final FactorySimulationEventConsumer eventConsumer = new FactorySimulationEventConsumer(this);
+
+				final Thread consumerThread = new Thread(() -> {
+					eventConsumer.consumeMessages();
+				});
+
+				consumerThread.start();
+
+//				final Thread refreshFactoryThread = new Thread(() -> {
+//					try {
+//						updateViewer();
+//					} catch (InterruptedException | URISyntaxException | IOException ex) {
+//						LOGGER.log(Level.SEVERE, "Error updating remote factory", ex);
+//					}
+//				});
+//				refreshFactoryThread.start();
+			}
+		} catch (IOException | InterruptedException | URISyntaxException ex) {
+			LOGGER.log(Level.SEVERE, "Could not start remote simulation", ex);
+		}
+	}
+	
+//	private void updateViewer() throws InterruptedException, URISyntaxException, IOException {
+//		Factory remoteFactoryModel = getFactory();
+//
+//	    if (remoteFactoryModel == null) {
+//	        return;
+//	    }
+//	    
+//	    setCanvas(remoteFactoryModel);
+//	    
+//		while (((Factory) getCanvas()).isSimulationStarted()) {
+//			Thread.sleep(100);
+//			
+//			remoteFactoryModel = getFactory();
+//			if (remoteFactoryModel == null) {
+//	            break;
+//	        }
+//			setCanvas(remoteFactoryModel);
+//		}
+//	}
+	
+	@Override
+	public void setCanvas(final Canvas canvasModel) {
+		super.setCanvas(canvasModel);
+
+	    notifier.notifyObservers();
+//		final Factory currentFactory = (Factory) getCanvas();
+//		
+//		final List<Observer> observers = currentFactory.getObservers();
+//
+//		super.setCanvas(canvasModel);
+//
+//		final Factory newFactory = (Factory) getCanvas();
+//		
+//		for (final Observer observer : observers) {
+//			newFactory.addObserver(observer);
+//		}
+//
+//		newFactory.notifyObservers();
+	}
+	
+	public void setCanvas(final String factoryAsJsonString) {
+		try {
+			final Factory factoryModel = objectMapper.readValue(factoryAsJsonString, Factory.class);
+
+			setCanvas(factoryModel);
+		} catch (IOException ex) {
+			LOGGER.log(Level.SEVERE, "Could not deserialize received Factory", ex);
+		}
+	}
+	
+	@Override
+	public void stopAnimation() {
+		try {
+			final HttpRequest request = HttpRequest.newBuilder().uri(getSimulationUri()).DELETE().build();
+
+			final HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+			LOGGER.info("Simulation stop request returned: " + response.body());
+		} catch (IOException | InterruptedException | URISyntaxException ex) {
+			LOGGER.log(Level.SEVERE, "Could not stop remote simulation", ex);
+		}
+	}
+	
+	@Override
+	public boolean addObserver(final Observer observer) {
+	    return notifier.addObserver(observer);
+	}
+
+	@Override
+	public boolean removeObserver(final Observer observer) {
+	    return notifier.removeObserver(observer);
+	}
+}

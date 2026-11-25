@@ -306,10 +306,11 @@ public class RemoteSimulatorController extends SimulatorController {
 	private void startConsumer(final Factory factory) {
 		stopCurrentConsumer();
 
-		eventConsumer = new FactorySimulationEventConsumer(this, factory);
+		final FactorySimulationEventConsumer newConsumer = new FactorySimulationEventConsumer(this, factory);
+		eventConsumer = newConsumer;
 		
 		consumerThread = new Thread(() -> {
-		    eventConsumer.consumeMessages();
+			newConsumer.consumeMessages();
 		});
 
 		consumerThread.start();
